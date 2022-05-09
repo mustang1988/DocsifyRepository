@@ -1,4 +1,5 @@
 - [首页](/README.md#首页)
+    - [知识库](/repository/README.md#知识库)
     - [游戏攻略](/game/README.md#游戏攻略)
         - [英雄传说系列](/game/TheLegendOfHeroes/README.md#英雄传说系列)
             - [闪之轨迹](/game/TheLegendOfHeroes/SenNoKiseki/README.md#闪之轨迹)
