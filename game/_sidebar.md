@@ -1,0 +1,3 @@
+- [首页](/README)
+    - [游戏攻略](/game/README)
+        - [英雄传说系列](/game/TheLegendOfHeroes/README)

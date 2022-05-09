@@ -1,9 +1,3 @@
 - [首页](/)
-    - 知识库
-    - 游戏攻略
-        - 英雄传说系列
-            - [闪之轨迹](/game/TheLegendOfHeroes/SenNoKiseki/README)
-            - [闪之轨迹2](/game/TheLegendOfHeroes/SenNoKiseki2/README)
-            - [闪之轨迹3](/game/TheLegendOfHeroes/SenNoKiseki3/README)
-            - [闪之轨迹4](/game/TheLegendOfHeroes/SenNoKiseki4/README)
-            - [创之轨迹](/game/TheLegendOfHeroes/HajimariNoKiseki/README)
+    - [知识库](/repository/README)
+    - [游戏攻略](/game/README)
