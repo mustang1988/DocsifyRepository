@@ -4,6 +4,8 @@
         - [英雄传说系列](/game/TheLegendOfHeroes/README.md#英雄传说系列)
             - [闪之轨迹](/game/TheLegendOfHeroes/SenNoKiseki/README.md#闪之轨迹)
                 - [序章 托尔兹士官学院](/game/TheLegendOfHeroes/SenNoKiseki/chapters/序章/README.md#序章-托尔兹士官学院)
+                    - [倒叙](/game/TheLegendOfHeroes/SenNoKiseki/chapters/序章/README.md#倒叙)
+                    - [3/31](/game/TheLegendOfHeroes/SenNoKiseki/chapters/序章/README.md#_331)
                 - [第一章 新学期 \~初次实习\~](/game/TheLegendOfHeroes/SenNoKiseki/chapters/第一章/README.md#第一章-新学期-初次实习)
                 - [第二章 美丽的翡翠公都](/game/TheLegendOfHeroes/SenNoKiseki/chapters/第二章/README.md#第二章-美丽的翡翠公都)
                 - [第三章 横跨铁路 \~苍穹的大地\~](/game/TheLegendOfHeroes/SenNoKiseki/chapters/第三章/README.md#第三章-横跨铁路-苍穹的大地)

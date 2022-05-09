@@ -6,4 +6,4 @@
             - [闪之轨迹III](/game/TheLegendOfHeroes/SenNoKiseki3/README.md#闪之轨迹iii)
             - [闪之轨迹IV](/game/TheLegendOfHeroes/SenNoKiseki4/README.md#闪之轨迹iv)
             - [创之轨迹](/game/TheLegendOfHeroes/HajimariNoKiseki/README.md#创之轨迹)
-                - [序章]()
+                - [序章「克洛斯贝尔解放作战」](/game/TheLegendOfHeroes/HajimariNoKiseki/chapters/序章/README.md#序章克洛斯贝尔解放作战)
