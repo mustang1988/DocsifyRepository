@@ -6,6 +6,7 @@
             - [TypeScript](/repository/languages/TypeScript/README.md#typescript)
             - [Java](/repository/languages/Java/README.md#java)
             - [PHP](/repository/languages/PHP/README.md#php)
+            - [C++](/repository/languages/CPP/README.md#c)
         - [数据库](/repository/databases/README.md#数据库)
         - [中间件](/repository/middleware/README.md#中间件)
         - [工具](/repository/tools/README.md#工具)
