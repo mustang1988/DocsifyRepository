@@ -1,7 +1,8 @@
 # 第2话 「异兽」
 
 ---
-## [返回](/game/TokyoXanadu/README.md#东京幻都ex)
+
+[返回](/game/TokyoXanadu/README.md#东京幻都ex)
 
 ## 4/27
 
