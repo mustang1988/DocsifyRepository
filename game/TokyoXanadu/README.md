@@ -2,7 +2,7 @@
 
 ---
 
-## [返回](/game/README.md#游戏攻略)
+[返回](/game/README.md#游戏攻略)
 
 ## [第1话「异界化」](/game/TokyoXanadu/chapters/第一话/README.md#第1话异界化)
 ### [4/17](/game/TokyoXanadu/chapters/第一话/README.md#_417)
