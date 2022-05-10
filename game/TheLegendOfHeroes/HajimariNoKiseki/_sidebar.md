@@ -1,4 +1,5 @@
 - [首页](/README.md#首页)
+    - [知识库](/repository/README.md#知识库)
     - [游戏攻略](/game/README.md#游戏攻略)
         - [英雄传说系列](/game/TheLegendOfHeroes/README.md#英雄传说系列)
             - [闪之轨迹](/game/TheLegendOfHeroes/SenNoKiseki/README.md#闪之轨迹)
@@ -7,3 +8,5 @@
             - [闪之轨迹IV](/game/TheLegendOfHeroes/SenNoKiseki4/README.md#闪之轨迹iv)
             - [创之轨迹](/game/TheLegendOfHeroes/HajimariNoKiseki/README.md#创之轨迹)
                 - [序章「克洛斯贝尔解放作战」](/game/TheLegendOfHeroes/HajimariNoKiseki/chapters/序章/README.md#序章克洛斯贝尔解放作战)
+        - [东京幻都eX+](/game/TokyoXanadu/README.md#东京幻都ex)
+        - [女神异闻录5](/game/Persona5/README.md#女神异闻录5)

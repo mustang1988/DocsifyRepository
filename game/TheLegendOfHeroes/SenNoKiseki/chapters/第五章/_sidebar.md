@@ -23,3 +23,5 @@
             - [闪之轨迹III](/game/TheLegendOfHeroes/SenNoKiseki3/README.md#闪之轨迹iii)
             - [闪之轨迹IV](/game/TheLegendOfHeroes/SenNoKiseki4/README.md#闪之轨迹iv)
             - [创之轨迹](/game/TheLegendOfHeroes/HajimariNoKiseki/README.md#创之轨迹)
+        - [东京幻都eX+](/game/TokyoXanadu/README.md#东京幻都ex)
+        - [女神异闻录5](/game/Persona5/README.md#女神异闻录5)
