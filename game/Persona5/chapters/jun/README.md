@@ -2,6 +2,8 @@
 
 ---
 
+[返回](/game/Persona5/README.md#6月gamepersona5chaptersjunreadmemd6月)
+
 ## 6/1
 
 放课后找楼梯旁的龙司鬼混

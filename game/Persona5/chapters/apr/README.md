@@ -2,6 +2,8 @@
 
 ---
 
+[返回](/game/Persona5/README.md#4月gamepersona5chaptersaprreadmemd4月)
+
 ## 4/9~4/12
 
 剧情
@@ -301,7 +303,7 @@ Show time！
 
 地铁读「大盗·苏洛」
 
-课堂提问：人物⇒才能⇒優秀的人
+课堂提问：*人物⇒才能⇒優秀的人*
 
 放课后前往涉谷返还DVD
 
