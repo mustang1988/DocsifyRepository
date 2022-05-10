@@ -2,7 +2,7 @@
 
 ---
 
-## [返回首页](/)
+## [返回](/)
 ## [编程语言](/repository/languages/README.md#编程语言)
 ### [C++](/repository/languages/CPP/README.md#cpp)
 ### [Java](/repository/languages/Java/README.md#java)
@@ -15,7 +15,7 @@
 #### [MySQL](/repository/databases/RDBMS/MySQL/README.md#mysql)
 #### [PostgreSQL](/repository/databases/RDBMS/PostgreSQL/README.md#postgresql)
 #### [SQLite](/repository/databases/RDBMS/SQLite/README.md#sqlite)
-### [非关系型数据库](/repository/databases/non-relational/README.md#非关系型数据库)
+### [非关系型数据库](/repository/databases/NoSQL/README.md#非关系型数据库)
 #### [MongoDB](/repository/databases/NoSQL/MongoDB/README.md#mongodb)
 #### [Redis](/repository/databases/NoSQL/Redis/README.md#redis)
 ## [框架](/repository/frameworks/README.md#框架)
@@ -52,7 +52,7 @@
 ### [Obsidian](/repository/tools/Obsidian/README.md#obsidian)
 ### [VSCode](/repository/tools/VSCode/README.md#vscode)
 ## [理论](/repository/theory/README.md#理论)
-### [算法](/repository/theory/algorithm/README.md#算法)
+### [算法](/repository/theory/algorithms/README.md#算法)
 ### [领域驱动](/repository/theory/DDD/README.md#领域驱动)
 ### [函数式编程](/repository/theory/FP/README.md#函数式编程)
 ### [计算机网络](/repository/theory/network/README.md#计算机网络)

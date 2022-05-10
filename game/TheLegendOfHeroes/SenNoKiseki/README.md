@@ -1,7 +1,7 @@
 # 闪之轨迹
 
 ---
-
+## [返回](/game/TheLegendOfHeroes/README.md#英雄传说系列)
 ## [序章](/game/TheLegendOfHeroes/SenNoKiseki/chapters/序章/README.md#序章-托尔兹士官学院)
 ### [倒叙](/game/TheLegendOfHeroes/SenNoKiseki/chapters/序章/README.md#倒叙)
 ### [3/31](/game/TheLegendOfHeroes/SenNoKiseki/chapters/序章/README.md#_331)
