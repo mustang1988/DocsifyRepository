@@ -3,13 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>莱恩哈特的知识库</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- plugins -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
 </head>
 
 <body>
@@ -18,13 +16,25 @@
     window.$docsify = {
       name: '',
       repo: '',
-      // loadSidebar: true,
+      loadNavbar: '_navbar.md',
+      autoHeader: true,
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- plugins -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+  <!-- 插件 -->
+  <!-- 代码语法高亮插件 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-hlsl.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script> -->
+  <!-- 代码复制插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  
 </body>
 
 </html>
