@@ -16,7 +16,10 @@
     window.$docsify = {
       name: '',
       repo: '',
-      loadNavbar: '_navbar.md',
+      alias: {
+        '/.*/_navbar.md': '_navbar.md',
+      },
+      loadNavbar: true,
       autoHeader: true,
     }
   </script>
@@ -34,7 +37,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script> -->
   <!-- 代码复制插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  
+
 </body>
 
 </html>
