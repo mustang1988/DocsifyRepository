@@ -1,1 +1,0 @@
-# What doen't kill you, make you stronger
