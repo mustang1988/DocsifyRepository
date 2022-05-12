@@ -47,6 +47,7 @@
     - [NPM](/repository/tools/NPM/README.md#npm)
     - [Obsidian](/repository/tools/Obsidian/README.md#obsidian)
     - [VSCode](/repository/tools/VSCode/README.md#vscode)
+    - [Pyinstaller](/repository/tools/Pyinstaller/README.md#pyinstaller)
 - [理论](/repository/theory/README.md#理论)
     - [算法](/repository/theory/algorithms/README.md#算法)
     - [领域驱动](/repository/theory/DDD/README.md#领域驱动)
