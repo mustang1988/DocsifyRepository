@@ -2,5 +2,4 @@
 
 ---
 
-## [知识库](/repository/README.md#知识库)
-## [游戏攻略](/game/README.md#游戏攻略)
+- [知识库](/repository/README.md#知识库)
