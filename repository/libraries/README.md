@@ -7,7 +7,7 @@
 - [GraphQL](/repository/libraries/GraphQL/README.md#graphql)
 - [GRPC](/repository/libraries/GRPC/README.md#grpc)
 - [lodash](/repository/libraries/lodash/README.md#lodash)
-- [Mocha](/repository/libraries/mocha/README.md#mocha)
+- [Mocha](/repository/libraries/Mocha/README.md#Mocha)
 - [Nanoid](/repository/libraries/Nanoid/README.md#nanoid)
 - [ReactJS](/repository/libraries/React/README.md#reactjs)
 - [ReactiveX](/repository/libraries/ReactiveX/README.md#reactivex)
