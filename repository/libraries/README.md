@@ -13,3 +13,4 @@
 - [ReactiveX](/repository/libraries/ReactiveX/README.md#reactivex)
 - [Apache Thrift](/repository/libraries/Thrift/README.md#thrift)
 - [VueJS](/repository/libraries/Vue/README.md#vuejs)
+- [Mongoose](/repository/libraries/Mongoose/README.md#mongoose)

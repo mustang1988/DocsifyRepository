@@ -29,6 +29,7 @@
     - [ReactiveX](/repository/libraries/ReactiveX/README.md#reactivex)
     - [Apache Thrift](/repository/libraries/Thrift/README.md#thrift)
     - [VueJS](/repository/libraries/Vue/README.md#vuejs)
+    - [Mongoose](/repository/libraries/Mongoose/README.md#mongoose)
 - [中间件](/repository/middleware/README.md#中间件)
     - [ElasticSearch](/repository/middleware/ElasticSearch/README.md#elasticsearch)
     - [Apache Kafka](/repository/middleware/Kafka/README.md#apache-kafka)

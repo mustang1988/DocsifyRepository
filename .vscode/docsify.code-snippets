@@ -1,0 +1,15 @@
+{
+	// Docsify 空白文档模板
+	"Print to console": {
+		"scope": "markdown,md",
+		"prefix": "docsify",
+		"body": [
+			"# $1",
+			"",
+			"---",
+			"",
+			"TODO",
+		],
+		"description": "Docsify 空白文档模板"
+	}
+}
