@@ -1,4 +1,4 @@
-# VSCOde
+# VSCode
 
 ---
 
