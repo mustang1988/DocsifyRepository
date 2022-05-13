@@ -22,7 +22,7 @@
 
 launch.json配置文件默认内容:
 
-```json
+```javascript
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -44,7 +44,7 @@ launch.json配置文件默认内容:
 
 修改此配置文件, 修改后内容如下:
 
-```json
+```javascript
 {
     "version": "0.2.0",
     "configurations": [
@@ -61,11 +61,11 @@ launch.json配置文件默认内容:
 
 其中
 
-- runtimeArgs 为TypeScript运行时所需要, 依赖于npm包"ts-node", 需要先自行安装
+- *runtimeArgs*为TypeScript运行时所需要, 依赖于npm包*ts-node*, 需要先自行安装
 
-?> 如果是调试JavaScript代码, 这部分配置是不需要的
+?> 如果是调试JavaScript代码, 这runtimeArgs配置是不需要的
 
-- args 为前面创建的调试用入口文件, 变量"${workspaceFolder}"即为VSCode项目的根目录路径
+- *args*为前面创建的调试用入口文件, 变量"${workspaceFolder}"为VSCode中项目的根目录路径
 
 ## 运行单步调试
 
