@@ -1,0 +1,36 @@
+{
+	// 新建Lodash函数说明模板
+	"Print to console": {
+		"scope": "markdown,md",
+		"prefix": "lodash",
+		"body": [
+			"# $1",
+			"",
+			"---",
+			"",
+			"## 简介",
+			"",
+			"$2",
+			"",
+			"## 是否影响原引用内容",
+			"",
+			"- $3",
+			"",
+			"## 所属分类",
+			"",
+			"- ",
+			"",
+			"## 示例",
+			"",
+			"```javascript",
+			"const _ = require('lodash');",
+			"",
+			"```",
+			"",
+			"## 官方文档",
+			"",
+			"[$1](https://lodash.com/docs/4.17.15#$1)"
+		],
+		"description": "新建Lodash函数说明模板"
+	}
+}
