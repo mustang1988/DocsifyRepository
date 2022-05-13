@@ -2,7 +2,7 @@
 
 ---
 
-> 接下来 Ctrl+F 很有用
+?> 接下来 Ctrl+F 很有用
 
 - [知识库](/repository/README.md#知识库)
     - [编程语言](/repository/languages/README.md#编程语言)
