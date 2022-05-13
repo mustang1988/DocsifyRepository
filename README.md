@@ -11,6 +11,7 @@
         - [JavaScript](/repository/languages/JavaScript/README.md#javascript)
         - [PHP](/repository/languages/PHP/README.md#php)
         - [Python](/repository/languages/Python/README.md#python)
+            - [logging模块配置示例](/repository/languages/Python/logging模块配置示例.md#logging模块配置示例)
         - [TypeScript](/repository/languages/TypeScript/README.md#typescript)
     - [数据库](/repository/databases/README.md#数据库)
         - [关系型数据库](/repository/databases/RDBMS/README.md#关系型数据库)
