@@ -2,8 +2,6 @@
 
 ---
 
-
-
 - [算法](/repository/theory/algorithms/README.md#算法)
 - [领域驱动](/repository/theory/DDD/README.md#领域驱动)
 - [函数式编程](/repository/theory/FP/README.md#函数式编程)

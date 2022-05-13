@@ -2,8 +2,6 @@
 
 ---
 
-
-
 - [C++](/repository/languages/CPP/README.md#cpp)
 - [Java](/repository/languages/Java/README.md#java)
 - [JavaScript](/repository/languages/JavaScript/README.md#javascript)
