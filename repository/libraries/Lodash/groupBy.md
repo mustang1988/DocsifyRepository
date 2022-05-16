@@ -1,14 +1,18 @@
-# intersectionBy
+# groupBy
 
 ---
 
 ## 简介
 
-对多个数组数据附条件取交集
+对数组/集合进行分组
 
 ## 是否影响原引用内容
 
 - 否
+
+## 参数说明
+
+- 
 
 ## 所属分类
 
@@ -19,10 +23,10 @@
 
 ```javascript
 const _ = require('lodash');
-_.intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // => [2.1]
-_.intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x'); // => [{ 'x': 1 }]
+_.groupBy([6.1, 4.2, 6.3], Math.floor); // { '4': [4.2], '6': [6.1, 6.3] }
+_.groupBy(['one', 'two', 'three'], 'length'); // { '3': ['one', 'two'], '5': ['three'] }
 ```
 
 ## 官方文档
 
-[intersectionBy](https://lodash.com/docs/4.17.15#intersectionBy)
+[groupBy](https://lodash.com/docs/4.17.15#groupBy)
