@@ -2,6 +2,8 @@
 
 ---
 
+参考: https://github.com/iluwatar/java-design-patterns
+
 - [设计模式-Design Pattern](/repository/Theories/ObjectOrientedProgramming/DesignPattern/README.md#设计模式-design-pattern)
     - [创建型设计模式-Creational Patterns](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/README.md#创建型设计模式-creational-patterns)
         - [单例模式-Singleton](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/Singleton/README.md#单例模式-singleton)
