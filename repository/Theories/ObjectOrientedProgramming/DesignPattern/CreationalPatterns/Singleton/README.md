@@ -5,8 +5,8 @@
 ## UML
 
 ```plantuml
-@startuml 单例模式-Singleton
-title 单例模式-Singleton
+@startuml 单例模式 Singleton
+title 单例模式 Singleton
 
 class Singleton {
     - static Singleton instance
@@ -22,7 +22,7 @@ Singleton <.. Client: Singleton.getInstance()
 
 单例模式(Singleton Pattern): 单例模式确保某一个类只有一个实例, 而且自行实例化并向整个系统提供这个实例, 这个类称为单例类, 它提供全局访问的方法
 
-一是某个类只能有一个实例, 二是它必须自行创建这个实例, 三是它必须自行向整个系统提供这个实例。单例模式是一种对象创建型模式。单例模式又名单件模式或单态模式
+一是某个类只能有一个实例, 二是它必须自行创建这个实例, 三是它必须自行向整个系统提供这个实例
 
 ## 使用场景
 

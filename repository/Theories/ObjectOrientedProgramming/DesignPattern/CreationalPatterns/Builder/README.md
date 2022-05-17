@@ -5,7 +5,10 @@
 ## UML
 
 ```plantuml
+@startuml 建造者模式 Builder
+title 建造者模式 Builder
 
+@enduml
 ```
 
 ## 介绍

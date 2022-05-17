@@ -5,7 +5,10 @@
 ## UML
 
 ```plantuml
+@startuml 原型模式 Prototype
+title 原型模式 Prototype
 
+@enduml
 ```
 
 ## 介绍
