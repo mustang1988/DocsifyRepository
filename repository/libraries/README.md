@@ -8,6 +8,7 @@
 - [GRPC](/repository/Libraries/GRPC/README.md#grpc)
 - [Lodash](/repository/Libraries/Lodash/README.md#lodash)
     - [Lodash 常用函数速查](/repository/Libraries/Lodash/Lodash常用函数速查.md#lodash常用函数速查)
+    - [Lodash链式调用](/repository/Libraries/Lodash/Lodash链式调用.md#lodash链式调用)
 - [Mocha](/repository/Libraries/Mocha/README.md#Mocha)
 - [Nanoid](/repository/Libraries/Nanoid/README.md#nanoid)
 - [ReactJS](/repository/Libraries/React/README.md#reactjs)
