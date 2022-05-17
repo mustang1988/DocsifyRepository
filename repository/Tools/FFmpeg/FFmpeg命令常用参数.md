@@ -1,0 +1,27 @@
+# FFmpeg命令常用参数
+
+---
+
+- [通用参数](/repository/Tools/FFmpeg/Common/README.md#通用参数)
+    - [-i](/repository/Tools/FFmpeg/Common/-i.md#i)
+    - [-f](/repository/Tools/FFmpeg/Common/-f.md#f)
+    - [-threads](/repository/Tools/FFmpeg/Common/-threads.md#threads)
+    - [-sn](/repository/Tools/FFmpeg/Common/-sn.md#sn)
+    - [-dn](/repository/Tools/FFmpeg/Common/-dn.md#dn)
+    - [-an](/repository/Tools/FFmpeg/Common/-an.md#an)
+    - [-vn](/repository/Tools/FFmpeg/Common/-vn.md#vn)
+    - [-y](/repository/Tools/FFmpeg/Common/-y.md#y)
+- [视频流操作参数](/repository/Tools/FFmpeg/VideoStream/README.md#视频流操作参数)
+    - [通用视频流操作参数](/repository/Tools/FFmpeg/VideoStream/Common/README.md#通用视频流操作参数)
+        - [-g](/repository/Tools/FFmpeg/VideoStream/Common/-g.md#g)
+        - [-intra](/repository/Tools/FFmpeg/VideoStream/Common/-intra.md#intra)
+        - [-r](/repository/Tools/FFmpeg/VideoStream/Common/-r.md#r)
+        - [-c:v](/repository/Tools/FFmpeg/VideoStream/Common/-c_v.md#cv)
+        - [-b:v](/repository/Tools/FFmpeg/VideoStream/Common/-b_v.md#bv)
+        - [-pix_fmt](/repository/Tools/FFmpeg/VideoStream/Common/-pix_fmt.md#pix_fmt)
+    - [H.264, H.265(HEVC)视频流操作参数](/repository/Tools/FFmpeg/VideoStream/H.26x/README.md#h264-h265hevc视频流操作参数)
+    - [VP8, VP9视频流操作参数](/repository/Tools/FFmpeg/VideoStream/VPx/README.md#vp8-vp9视频流操作参数)
+- [音频流操作参数](/repository/Tools/FFmpeg/AudioStream/README.md#音频流操作参数)
+- [视频合成操作参数](/repository/Tools/FFmpeg/Composite/README.md#视频合成操作参数)
+- [视频分片操作参数](/repository/Tools/FFmpeg/Segment/README.md#视频分片操作参数)
+- [视频剪辑操作参数](/repository/Tools/FFmpeg/Clipping/README.md#视频剪辑操作参数)
