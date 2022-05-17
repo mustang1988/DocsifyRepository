@@ -2,6 +2,9 @@
 
 ---
 
+参考：
+https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/singleton.html
+
 - [创建型设计模式-Creational Patterns](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/README.md#创建型设计模式-creational-patterns)
     - [单例模式-Singleton](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/Singleton/README.md#单例模式-singleton)
     - [建造者模式-Builder](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/Builder/README.md#建造者模式-builder)
