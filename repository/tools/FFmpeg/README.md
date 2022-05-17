@@ -52,6 +52,7 @@
         - [H.264视频转码后画面失真问题研究](/repository/Tools/FFmpeg/H.264视频转码后画面失真问题研究.md#h264视频转码后画面失真问题研究)
     - [为无音频流的视频文件添加空白音频流](/repository/Tools/FFmpeg/Commands/为无音频流的视频文件添加空白音频流.md#为无音频流的视频文件添加空白音频流)
     - [视频文件生成预览图序列](/repository/Tools/FFmpeg/Commands/视频文件生成预览图序列.md#视频文件生成预览图序列)
+    - [获取视频指定帧的画面图片](/repository/Tools/FFmpeg/Commands/获取视频指定帧的画面图片.md#获取视频指定帧的画面图片)
 - [FFprobe命令常用参数](/repository/Tools/FFmpeg/FFprobe常用参数介绍.md#FFprobe常用参数介绍)
     - [-i](/repository/Tools/FFmpeg/FFprobe/-i.md#i)
     - [-v](/repository/Tools/FFmpeg/FFprobe/-v.md#v)
