@@ -51,7 +51,7 @@
             - [-t](/repository/Tools/FFmpeg/Clipping/-t.md#t)
     - [FFmpeg常用处理命令](/repository/Tools/FFmpeg/FFmpeg常用处理命令.md#ffmpeg常用处理命令)
         - [将视频转码为支持Web页面Video标签播放的格式](/repository/Tools/FFmpeg/Commands/将视频转码为支持Web页面Video标签播放的格式.md#将视频转码为支持web页面video标签播放的格式)
-            - [H.264视频转码后画面失真问题研究](/repository/Tools/FFmpeg/Commands/H.264视频转码后画面失真问题研究.md#h264视频转码后画面失真问题研究)
+            - [H.264视频转码后画面失真问题研究](/repository/Tools/FFmpeg/H.264视频转码后画面失真问题研究.md#h264视频转码后画面失真问题研究)
 - [Git](/repository/Tools/Git/README.md#git)
 - [Notion](/repository/Tools/Notion/README.md#notion)
 - [NPM](/repository/Tools/NPM/README.md#npm)
