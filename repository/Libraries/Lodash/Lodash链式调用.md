@@ -20,6 +20,16 @@ const _ = require('lodash');
 let chain = _.chain(data);
 ```
 
+## 获取链式调用最终结果
+
+访问调用链的value()函数获取当前调用链的最终结果
+
+```javascript
+const _ = require('lodash');
+let chain = _(data);
+chain.value();  // 获取链式调用最终结果
+```
+
 ## 复杂链式调用示例
 
 设, 有以下图书数据集
@@ -49,14 +59,14 @@ const books = [
 
 ```javascript
 _(books)                                     // 创建链式调用
-.groupBy('category')                         // 按 category 分组
-.map((books, category) => ({                 // 分组属性转换
-	category,                                // 组名称 category
-	books: _(books)                          // 该组图书列表 books
-        .filter(b => !b.archived)            // 该组图书列表过滤掉 archived 为 true 的值
-        .map(b => _.pick(b,['id','name']))   // 该组图书列表只保留 id 和 name 两个属性
-        .orderBy('id','desc')                // 该组图书列表按 id 降序排序
-        .value()                             // 得到过滤,字段摘取,排序后的该组图书列表
+.groupBy('category')                         // 1. 按 category 分组
+.map((books, category) => ({                 // 2. 分组属性转换
+	category,
+	books: _(books)
+        .filter(b => !b.archived)            // 3. 该组图书列表过滤掉 archived 为 true 的值
+        .orderBy('id','desc')                // 4. 该组图书列表按 id 降序排序
+        .map(b => _.pick(b,['id','name']))   // 5. 该组图书列表只保留 id 和 name 两个属性
+        .value();
 }))
 .value()                                     // 得到最终结果
 
