@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -of <format>
 ```
 
@@ -24,6 +24,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffprobe -of json
 ```

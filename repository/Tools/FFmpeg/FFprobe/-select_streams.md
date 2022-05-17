@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -select_streams <stream_specifier>
 ```
 
@@ -31,6 +31,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffprobe -select_streams a
 ```

@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -show_streams
 ```
 
 ## 示例
 
-```shell
+```bash
 ffprobe -show_streams
 ```

@@ -10,12 +10,12 @@
 
 ## 用法
 
-```shell
+```bash
 -ss <time_off>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -ss 1.2
 ```

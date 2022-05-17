@@ -9,7 +9,7 @@
 
 ## 用法
 
-```shell
+```bash
 -preset <preset>
 ```
 
@@ -38,6 +38,6 @@ H.264, H.265(HEVC)提供了以下几个可选预设值
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -preset ultrafast
 ```

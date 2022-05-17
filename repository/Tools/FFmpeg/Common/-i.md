@@ -13,7 +13,7 @@
 
 ## 用法
 
-```shell
+```bash
 -i <input>
 ```
 
@@ -21,13 +21,13 @@
 
 - 文件
 
-```shell
+```bash
 ffmpeg -i test.mp4
 ```
 
 - 流媒体
 
-```shell
+```bash
 # HLS 流
 ffmpeg -i https://www.xxx.com/xxx.m3u8
 # RTMP 流
@@ -36,6 +36,6 @@ ffmpeg -i rtmp://xxx.xxx.xxx:1935/xxx/xxx
 
 - 源
 
-```shell
+```bash
 ffmpeg -i nullsrc=size=640x480
 ```

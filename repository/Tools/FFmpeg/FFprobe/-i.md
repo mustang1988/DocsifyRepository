@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -i <input>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffprobe -i input.mp4
 ```

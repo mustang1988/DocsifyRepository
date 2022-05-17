@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -hls_list_size <int>
 ```
 
@@ -20,6 +20,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -hls_list_size 4
 ```

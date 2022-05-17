@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -show_format
 ```
 
 ## 示例
 
-```shell
+```bash
 ffprobe -show_format
 ```

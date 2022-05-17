@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -hls_segment_filename <template>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -hls_segment_filename segment_%d.ts
 ```

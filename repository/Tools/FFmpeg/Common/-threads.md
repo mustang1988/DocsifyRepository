@@ -9,7 +9,7 @@
 
 ## 用法
 
-```shell
+```bash
 -threads <threads_count>
 ```
 
@@ -19,6 +19,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -threads 4
 ```

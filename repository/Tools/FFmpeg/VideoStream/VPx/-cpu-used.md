@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -cpu-used <int>
 ```
 
@@ -18,6 +18,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -cpu-used 2
 ```

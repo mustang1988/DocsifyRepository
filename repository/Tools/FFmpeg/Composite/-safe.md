@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -safe <boolean>
 ```
 
@@ -16,6 +16,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -safe 0
 ```

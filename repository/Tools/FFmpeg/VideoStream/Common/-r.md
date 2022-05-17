@@ -9,7 +9,7 @@
 
 ## 用法
 
-```shell
+```bash
 -r <rate>
 ```
 
@@ -28,6 +28,6 @@ rate值可以是分数也可以是数值
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -r 24/1
 ```

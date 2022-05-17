@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -quality <quality>
 ```
 
@@ -21,6 +21,6 @@ VP8/VP9提供以下可选值
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -quality best
 ```

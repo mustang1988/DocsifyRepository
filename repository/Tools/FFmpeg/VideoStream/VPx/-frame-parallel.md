@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -frame-parallel <boolean>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -frame-parallel 1
 ```

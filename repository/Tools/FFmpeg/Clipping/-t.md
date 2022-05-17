@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -t <duration>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -t 1.4
 ```

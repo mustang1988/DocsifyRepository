@@ -17,7 +17,7 @@
 下载安装 Deop Tools 有以下两种方式, 任选其一即可
 - 通过Git下载
 
-```shell
+```bash
 git clone https://chromium.googlesource.com/chromium/Tools/depot_tools.git
 ```
 
@@ -33,7 +33,7 @@ Deop Tools 解压完成或git clone 完成后, 将解压目录配置到系统环
 
 打开终端, 执行命令更新 Deop Tools
 
-```shell
+```bash
 gclient
 ```
 
@@ -43,7 +43,7 @@ gclient
 
 使用终端进入该目录, 拉取源码并更新相关子模块与依赖
 
-```shell
+```bash
 cd D:\Code\WebRTC_Related\webrtc-checkout
 fetch --nohooks webrtc
 git checkout branch-heads/m79
@@ -56,14 +56,14 @@ gclient sync
 
 ## 生成 Ninja 构建目录
 
-```shell
+```bash
 cd src
 gn gen out/Win64 --args="is_debug=false target_os=\"win\" target_cpu=\"x64\" is_component_build=false is_clang=false use_lld=false treat_warnings_as_errors=false use_rtti=true rtc_include_tests=false rtc_build_examples=false"
 ```
 
 ## 执行编译
 
-```shell
+```bash
 ninja -C out/Default
 ```
 

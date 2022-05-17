@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -v <logLevel>
 ```
 
@@ -27,6 +27,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffprobe -v quiet
 ```

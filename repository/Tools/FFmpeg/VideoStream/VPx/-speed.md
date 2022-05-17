@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -speed <speed>
 ```
 
@@ -18,6 +18,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -speed 5
 ```

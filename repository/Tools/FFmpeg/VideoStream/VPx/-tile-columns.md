@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -tile-columns <int>
 ```
 
@@ -18,6 +18,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -tile-columns 6
 ```

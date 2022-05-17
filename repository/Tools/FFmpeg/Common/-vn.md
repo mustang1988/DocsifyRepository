@@ -9,12 +9,12 @@
 
 ## 用法
 
-```shell
+```bash
 -vn
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -vn
 ```

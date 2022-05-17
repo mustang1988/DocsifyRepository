@@ -9,7 +9,7 @@
 
 ## 用法
 
-```shell
+```bash
 -profile <profile>
 ```
 
@@ -23,6 +23,6 @@ H.264, H.265(HEVC)提供了以下几个常用的可选配置值
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -profile high
 ```

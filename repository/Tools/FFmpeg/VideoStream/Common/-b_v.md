@@ -9,12 +9,12 @@
 
 ## 用法
 
-```shell
+```bash
 -b:v <bitrate>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -b:v 1000
 ```

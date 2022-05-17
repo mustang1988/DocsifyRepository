@@ -13,7 +13,7 @@
 
 对应转码命令如下
 
-```shell
+```bash
 ffmpeg \
 -i {输入文件} \
 -c:v libx264 \

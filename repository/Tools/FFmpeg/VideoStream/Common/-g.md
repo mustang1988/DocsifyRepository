@@ -9,7 +9,7 @@
 
 ## 用法
 
-```shell
+```bash
 -g <gop>
 ```
 
@@ -19,6 +19,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -g 10
 ```

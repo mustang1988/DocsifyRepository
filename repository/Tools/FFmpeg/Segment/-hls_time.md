@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -hls_time <float>
 ```
 
@@ -18,6 +18,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -hls_time 5
 ```

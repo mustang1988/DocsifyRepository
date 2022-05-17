@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -hls_segment_type <type>
 ```
 
@@ -20,6 +20,6 @@
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -hls_segment_type fmp4
 ```

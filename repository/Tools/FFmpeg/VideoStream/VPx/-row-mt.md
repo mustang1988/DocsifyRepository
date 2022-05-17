@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -row-mt <boolean>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -row-mt 1
 ```

@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -deadline <deadline>
 ```
 
@@ -21,6 +21,6 @@ VP8/VP9提供以下可选值
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -deadline realtime
 ```

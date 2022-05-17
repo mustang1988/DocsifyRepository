@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -ar <sample_rate>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -ar 44100
 ```

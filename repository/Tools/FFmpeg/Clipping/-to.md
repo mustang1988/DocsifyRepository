@@ -10,12 +10,12 @@
 
 ## 用法
 
-```shell
+```bash
 -to <time_stop>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -to 7
 ```

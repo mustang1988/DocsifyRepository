@@ -11,12 +11,12 @@
 
 ## 用法
 
-```shell
+```bash
 -intra
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -intra
 ```

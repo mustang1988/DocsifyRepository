@@ -8,12 +8,12 @@
 
 ## 用法
 
-```shell
+```bash
 -b:a <bitrate>
 ```
 
 ## 示例
 
-```shell
+```bash
 ffmpeg -b:a 320k
 ```

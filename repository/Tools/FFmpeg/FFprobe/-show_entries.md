@@ -8,7 +8,7 @@
 
 ## 用法
 
-```shell
+```bash
 -show_entries <entry_list>
 ```
 
@@ -18,6 +18,6 @@ entry_list 格式大致为
 
 ## 示例
 
-```shell
+```bash
 ffprobe -show_entries streams=index,duration,codec:format=duration,name
 ```
