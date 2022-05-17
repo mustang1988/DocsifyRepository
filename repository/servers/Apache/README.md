@@ -1,7 +1,5 @@
-# Apache
+# ![Apache](./images/logo.jpg ":size=100") Apache
 
 ---
-
-![Apache](./images/logo.jpg ":size=100")
 
 TODO

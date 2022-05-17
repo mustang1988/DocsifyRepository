@@ -1,7 +1,5 @@
-# ZeroMQ
+# ![ZeroMQ](./images/logo.png ":size=100") ZeroMQ
 
 ---
-
-![ZeroMQ](./images/logo.png ":size=100")
 
 TODO

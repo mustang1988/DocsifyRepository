@@ -1,7 +1,5 @@
-# PyTorch
+# ![PyTorch](./images/logo.png ":size=100") PyTorch
 
 ---
-
-![TensorFlow](./images/logo.png ":size=100")
 
 TODO

@@ -1,7 +1,5 @@
-# Notion
+# ![Notion](./images/logo.png ":size=100") Notion
 
 ---
-
-![Notion](./images/logo.png ":size=100")
 
 TODO

@@ -1,7 +1,5 @@
-# Git
+# ![Git](./images/logo.png ":size=100") Git
 
 ---
-
-![Git](./images/logo.png ":size=100")
 
 TODO

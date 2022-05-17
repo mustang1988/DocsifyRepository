@@ -1,7 +1,5 @@
-# MySQL
+# ![MySQL](./images/logo.png ":size=100") MySQL
 
 ---
-
-![MySQL](./images/logo.png ":size=100")
 
 TODO

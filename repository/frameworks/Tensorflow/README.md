@@ -1,7 +1,5 @@
-# TensorFlow
+# ![TensorFlow](./images/logo.png ":size=100") TensorFlow
 
 ---
-
-![TensorFlow](./images/logo.png ":size=100")
 
 TODO
