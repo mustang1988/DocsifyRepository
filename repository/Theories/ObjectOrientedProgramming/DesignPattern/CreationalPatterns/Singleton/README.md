@@ -9,7 +9,7 @@
 title 单例模式 Singleton
 
 class Singleton {
-    - static Singleton instance
+    - Singleton instance
     ---
     - Singleton()
     + static getInstance()
