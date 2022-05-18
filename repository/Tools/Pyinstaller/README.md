@@ -2,4 +2,4 @@
 
 ---
 
-- [Pyinstaller打包Python项目](/repository/Tools/Pyinstaller/Pyinstaller打包Python项目.md#pyinstaller打包python项目)
+- [Pyinstaller打包Python项目](/repository/Tools/Pyinstaller/docs/Pyinstaller打包Python项目.md#pyinstaller打包python项目)

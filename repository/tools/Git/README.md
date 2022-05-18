@@ -2,4 +2,4 @@
 
 ---
 
-- [Git Workflow](/repository/Tools/Git/GitWorkflow.md#GitWorkflow)
+- [Git Workflow](/repository/Tools/Git/docs/GitWorkflow.md#GitWorkflow)
