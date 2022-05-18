@@ -6,13 +6,13 @@
 
 1. 代理服务, 编译过程中有大量源码, 工具需要通过Git进行更新和下载, WebRTC相关的Git仓库均在Google域名下, 国内无法直接访问, 所以代理服务是必须的
 
-2. 暂时删除本地已安装的Python的PATH环境变量配置, 编译中需要使用Google提供的编译工具包中指定版本的Python, 所以会与本地已经配置的版本冲突, 建议先删除本地已配置的Python环境变量, 尤其是PATH环境变量中的指向
+2. 暂时删除本地已安装的Python的PATH环境变量配置, 编译中需要使用Google提供的编译工具包中指定版本的Python, 所以可能会与本地已经配置的版本发生冲突, 建议先删除本地已配置的Python环境变量, 尤其是PATH环境变量中的指向
 
-3. 打开Windows设置中的"显示隐藏文件/文件夹选项"
+3. 建议打开Windows设置中的"显示隐藏文件/文件夹选项"
 
-4. Visual Studio 2015 及以上版本, 推荐使用2019或2017比较稳妥, 出错的概率会低很多
+4. Visual Studio 2015 及以上版本, 推荐使用 2019 或 2017 比较稳妥, 出错的概率会低很多
 
-## 下载安装&更新 Deop Tools 编译工具包
+## 下载安装&更新 Deop Tools 工具包
 
 下载安装 Deop Tools 有以下两种方式, 任选其一即可
 - 通过Git下载
@@ -25,13 +25,13 @@ git clone https://chromium.googlesource.com/chromium/Tools/depot_tools.git
 
 [下载地址](https://storage.googleapis.com/chrome-infra/depot_tools.zip)
 
-下载后解压到独立目录下, 确保该目录所在磁盘分区的剩余可用空间不低于*20GB*, 本文中文件解压目录位于: D:\Code\WebRTC_Related\depot_tools
+下载后解压到独立目录下, 确保该目录所在磁盘分区的剩余可用空间 ***不低于20GB***, 本文中, 文件解压目录位于: D:\Code\WebRTC_Related\depot_tools
 
-!> 注意压缩包中包含一个隐藏目录".git", 需要一并解压出来, 建议打开Windows中的"显示隐藏文件/文件夹配置"
+!> 注意压缩包中包含一个隐藏目录".git", 需要一并解压出来, 建议打开Windows中的"显示隐藏文件/文件夹配置"方便查看
 
-Deop Tools 解压完成或git clone 完成后, 将解压目录配置到系统环境变量PATH中
+下载的压缩包解压完成或 git clone 完成后, 将解压目录配置到系统环境变量PATH中
 
-打开终端, 执行命令更新 Deop Tools
+打开终端或CMD, 执行以下命令以更新 Deop Tools 到最新, 此过程会使用git拉取跟新内容, 因此目录下的.git隐藏目录是必须存在的
 
 ```bash
 gclient
@@ -41,7 +41,7 @@ gclient
 
 创建独立目录用于存放WebRTC源码, 本文中该目录为: D:\Code\WebRTC_Related\webrtc-checkout
 
-使用终端进入该目录, 拉取源码并更新相关子模块与依赖
+使用终端或CMD进入该目录, 拉取源码并更新相关子模块与依赖, 拉取地址位于google域名下, 国内无法直接访问, 请确保网络代理服务已完成配置并生效
 
 ```bash
 cd D:\Code\WebRTC_Related\webrtc-checkout
@@ -81,13 +81,13 @@ ninja -C out/Default
 
     1. 打开开始菜单 → 设置 → 应用 , 在列表中找到对应版本的Windows SDK, 点击下方的"修改"按钮
 
-        ![](./images/2.png)
+        ![缺少 dbghelp.dll_2](./images/2.png)
 
     2. 在弹出的安装向导中选择"修改", 点击"下一步"
 
     3. 勾选列表中的"Debugging Tools for Windows", 然后点击"更改"按钮
 
-        ![](./images/3.png)
+        ![缺少 dbghelp.dll_3](./images/3.png)
 
 ## 参考文档
 
