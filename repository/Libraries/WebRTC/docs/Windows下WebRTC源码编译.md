@@ -75,19 +75,19 @@ ninja -C out/Default
 
 - 缺少 dbghelp.dll
 
-    ![缺少 dbghelp.dll](./images/1.png)
+  ![缺少 dbghelp.dll](./images/1.png)
 
-    解决方案
+  解决方案
 
-    1. 打开开始菜单 → 设置 → 应用 , 在列表中找到对应版本的Windows SDK, 点击下方的"修改"按钮
+  1. 打开开始菜单 → 设置 → 应用 , 在列表中找到对应版本的Windows SDK, 点击下方的"修改"按钮
 
-        ![缺少 dbghelp.dll_2](./images/2.png)
+    ![缺少 dbghelp.dll_2](./images/2.png)
 
-    2. 在弹出的安装向导中选择"修改", 点击"下一步"
+  2. 在弹出的安装向导中选择"修改", 点击"下一步"
 
-    3. 勾选列表中的"Debugging Tools for Windows", 然后点击"更改"按钮
+  3. 勾选列表中的"Debugging Tools for Windows", 然后点击"更改"按钮
 
-        ![缺少 dbghelp.dll_3](./images/3.png)
+    ![缺少 dbghelp.dll_3](./images/3.png)
 
 ## 参考文档
 

@@ -18,11 +18,11 @@ _.meanBy(array, [iteratee=_.identity])
 
 - array
 
-    需要计算平均值的数组
+  需要计算平均值的数组
 
 - iteratee
 
-    过滤选择条件函数, 可选
+  过滤选择条件函数, 可选
 
 ## 所属分类
 

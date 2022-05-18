@@ -58,40 +58,40 @@ const books = [
 采用链式调用处理上述数据
 
 ```javascript
-_(books)                                     // 创建链式调用
-.groupBy('category')                         // 1. 按 category 分组
-.map((books, category) => ({                 // 2. 分组属性转换
+_(books)                   // 创建链式调用
+.groupBy('category')             // 1. 按 category 分组
+.map((books, category) => ({         // 2. 分组属性转换
 	category,
 	books: _(books)
-        .filter(b => !b.archived)            // 3. 该组图书列表过滤掉 archived 为 true 的值
-        .orderBy('id','desc')                // 4. 该组图书列表按 id 降序排序
-        .map(b => _.pick(b,['id','name']))   // 5. 该组图书列表只保留 id 和 name 两个属性
-        .value();
+    .filter(b => !b.archived)      // 3. 该组图书列表过滤掉 archived 为 true 的值
+    .orderBy('id','desc')        // 4. 该组图书列表按 id 降序排序
+    .map(b => _.pick(b,['id','name']))   // 5. 该组图书列表只保留 id 和 name 两个属性
+    .value();
 }))
-.value()                                     // 得到最终结果
+.value()                   // 得到最终结果
 
 // 最终返回结果:
 // [
 //   {
-//     category: '社会',
-//     books: [
-//       { id: 3, name: 'Name1-3' },
-//       { id: 1, name: 'Name1-1' }
-//     ]
+//   category: '社会',
+//   books: [
+//     { id: 3, name: 'Name1-3' },
+//     { id: 1, name: 'Name1-1' }
+//   ]
 //   },
 //   {
-//     category: '自然科学',
-//     books: [
-//       { id: 6, name: 'Name2-3' },
-//       { id: 4, name: 'Name2-1' }
-//     ]
+//   category: '自然科学',
+//   books: [
+//     { id: 6, name: 'Name2-3' },
+//     { id: 4, name: 'Name2-1' }
+//   ]
 //   },
 //   {
-//     category: '计算机',
-//     books: [
-//       { id: 9, name: 'Name3-3' },
-//       { id: 7, name: 'Name3-1' }
-//     ]
+//   category: '计算机',
+//   books: [
+//     { id: 9, name: 'Name3-3' },
+//     { id: 7, name: 'Name3-1' }
+//   ]
 //   }
 // ]
 ```

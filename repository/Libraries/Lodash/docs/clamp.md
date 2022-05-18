@@ -25,15 +25,15 @@ _.clamp(number, [lower], upper)
 
 - number
 
-    给定的数值
+  给定的数值
 
 - lower
 
-    取值下限, 可选
-    
+  取值下限, 可选
+  
 - upper
-        
-    取值上限
+    
+  取值上限
 
 ## 所属分类
 

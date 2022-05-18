@@ -15,35 +15,35 @@ Egg的Application提供生命周期函数的Hook, 可以在app.js或agent.js中�
 ```javascript
 class AppBootHook {
   constructor(app) {
-    this.app = app;
+  this.app = app;
   }
 
   configWillLoad() {
-    
+  
   }
 
   configDidLoad() {
-    
+  
   }
 
   async didLoad() {
-    
+  
   }
 
   async willReady() {
-    
+  
   }
 
   async didReady() {
-    
+  
   }
 
   async serverDidReady() {
-    
+  
   }
 
   async beforeClose() {
-    
+  
   }
 }
 
@@ -71,14 +71,14 @@ module.exports = AppBootHook;
 ```javascript
 'use strict'
 class AppBootHook {
-    constructor(app) {
-        this.app = app;
-    }
-    async beforeClose() {
-        // mock 一个匿名ctx
-        const ctx = await this.app.createAnonymousContext()
-        const { service, logger } = ctx
-    }
+  constructor(app) {
+    this.app = app;
+  }
+  async beforeClose() {
+    // mock 一个匿名ctx
+    const ctx = await this.app.createAnonymousContext()
+    const { service, logger } = ctx
+  }
 }
 
 module.exports = AppBootHook;

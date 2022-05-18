@@ -13,18 +13,18 @@ config = {
 	'disable_existing_loggers': True,
 	'formatters': {
 		'extend': {
-            # 自定义格式 [时间][级别][名称]: 消息
+      # 自定义格式 [时间][级别][名称]: 消息
 			'format': '[%(asctime)s][%(levelname)s][%(name)s]: %(message)s'
 		}
 	},
 	'handlers': {
-        # 控制台输出
+    # 控制台输出
 		'console': {
 			'level': os.getenv('LOG_LEVEL') if os.getenv('LOG_LEVEL') is not None else 'INFO',
 			'formatter': 'extend',
 			'class': 'logging.StreamHandler',
 		},
-        # 文件输出
+    # 文件输出
 		'rootFile': {
 			'level': os.getenv('LOG_LEVEL') if os.getenv('LOG_LEVEL') is not None else 'INFO',
 			'formatter': 'extend',
@@ -76,7 +76,7 @@ config = {
 		},
 	},
 	'loggers': {
-        # logger 分类
+    # logger 分类
 		'callback': {
 			'handlers': ['callbackFile', 'console'],
 			'level': os.getenv('LOG_LEVEL') if os.getenv('LOG_LEVEL') is not None else 'INFO',

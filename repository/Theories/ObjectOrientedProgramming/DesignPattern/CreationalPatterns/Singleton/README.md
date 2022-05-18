@@ -9,10 +9,10 @@
 title 单例模式 Singleton
 
 class Singleton {
-    - Singleton instance
-    ---
-    - Singleton()
-    + static getInstance()
+  - Singleton instance
+  ---
+  - Singleton()
+  + static getInstance()
 }
 Singleton <.. Client: Singleton.getInstance()
 @enduml

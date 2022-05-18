@@ -26,51 +26,51 @@ pip install pyinstaller
 
 - --distpath DIR
 
-    打包后的输出路径, 可选参数, 默认值: ./dist
+  打包后的输出路径, 可选参数, 默认值: ./dist
 
 - --workpath WORKPATH
 
-    打包编译的临时路径, 可选参数, 默认值: ./build
+  打包编译的临时路径, 可选参数, 默认值: ./build
 
 - --clean
 
-    执行构建前清空缓存和临时目录
+  执行构建前清空缓存和临时目录
 
 - --log-level LEVEL
 
-    构建时控制台输出日志级别, 可选参数, 默认值: INFO
+  构建时控制台输出日志级别, 可选参数, 默认值: INFO
 
 - -D 或 --onedir
 
-    构建并输出包含可执行文件的目录
+  构建并输出包含可执行文件的目录
 
 - -F 或 --onefile
 
-    构建并输出单一可执行文件
+  构建并输出单一可执行文件
 
 - --specpath DIR
 
-    存储构建生成的spec文件的目录
+  存储构建生成的spec文件的目录
 
 - -n NAME 或 --name NAME
 
-    输出可执行文件的名称, 可选参数, 默认值: 同入口py脚本文件名
+  输出可执行文件的名称, 可选参数, 默认值: 同入口py脚本文件名
 
 - --add-data <SRC;DEST or SRC:DEST>
 
-    添加静态资源文件或文件夹
+  添加静态资源文件或文件夹
 
 - -add-binary <SRC;DEST or SRC:DEST>
 
-    添加可执行文件或文件夹
+  添加可执行文件或文件夹
 
 - -p DIR 或 --paths DIR
 
-    代码引用文件检索目录
+  代码引用文件检索目录
 
 - -hidden-import MODULENAME 或 --hiddenimport MODULENAME
 
-    代码中非直接引用的模块或脚本名称
+  代码中非直接引用的模块或脚本名称
 
 ### spec 配置文件详解
 
@@ -87,32 +87,32 @@ block_cipher = None
 
 
 a = Analysis(['入口py脚本'],
-             pathex=['入口py脚本所在目录'],
-             binaries=[],
-             datas=[],
-             hiddenimports=[],
-             hookspath=[],
-             runtime_hooks=[],
-             excludes=[],
-             win_no_prefer_redirects=False,
-             win_private_assemblies=False,
-             cipher=block_cipher,
-             noarchive=False)
+       pathex=['入口py脚本所在目录'],
+       binaries=[],
+       datas=[],
+       hiddenimports=[],
+       hookspath=[],
+       runtime_hooks=[],
+       excludes=[],
+       win_no_prefer_redirects=False,
+       win_private_assemblies=False,
+       cipher=block_cipher,
+       noarchive=False)
 pyz = PYZ(a.pure, a.zipped_data,
-             cipher=block_cipher)
+       cipher=block_cipher)
 exe = EXE(pyz,
-          a.scripts,
-          a.binaries,
-          a.zipfiles,
-          a.datas,
-          [],
-          name='应用名称, 默认同入口py脚本的文件名',
-          debug=False,
-          bootloader_ignore_signals=False,
-          strip=False,
-          upx=True,
-          runtime_tmpdir=None,
-          console=True )
+      a.scripts,
+      a.binaries,
+      a.zipfiles,
+      a.datas,
+      [],
+      name='应用名称, 默认同入口py脚本的文件名',
+      debug=False,
+      bootloader_ignore_signals=False,
+      strip=False,
+      upx=True,
+      runtime_tmpdir=None,
+      console=True )
 ```
 
 该配置文件中, 支持上述罗列的 pyinstaller 参数
@@ -132,17 +132,17 @@ exe = EXE(pyz,
 
 ```python
 a = Analysis(['入口py脚本'],
-             pathex=['入口py脚本所在目录'],
-             binaries=[],
-             datas=[('a.txt','a.txt'),('assert','assert')],
-             hiddenimports=[],
-             hookspath=[],
-             runtime_hooks=[],
-             excludes=[],
-             win_no_prefer_redirects=False,
-             win_private_assemblies=False,
-             cipher=block_cipher,
-             noarchive=False)
+       pathex=['入口py脚本所在目录'],
+       binaries=[],
+       datas=[('a.txt','a.txt'),('assert','assert')],
+       hiddenimports=[],
+       hookspath=[],
+       runtime_hooks=[],
+       excludes=[],
+       win_no_prefer_redirects=False,
+       win_private_assemblies=False,
+       cipher=block_cipher,
+       noarchive=False)
 ```
 
 ### 执行打包

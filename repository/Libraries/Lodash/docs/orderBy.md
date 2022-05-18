@@ -32,19 +32,19 @@ var users = [
 console.log(_.orderBy(users, ['user', 'age'], ['asc', 'desc']));
 /**
  * [
-    { user: 'barney', age: 36 },
-    { user: 'barney', age: 34 },
-    { user: 'fred', age: 48 },
-    { user: 'fred', age: 40 }
+  { user: 'barney', age: 36 },
+  { user: 'barney', age: 34 },
+  { user: 'fred', age: 48 },
+  { user: 'fred', age: 40 }
    ]
 */
 console.log(users);
 /**
  * [
-     { user: 'fred', age: 48 },
-     { user: 'barney', age: 34 },
-     { user: 'fred', age: 40 },
-     { user: 'barney', age: 36 }
+   { user: 'fred', age: 48 },
+   { user: 'barney', age: 34 },
+   { user: 'fred', age: 40 },
+   { user: 'barney', age: 36 }
    ]
 */
 ```
