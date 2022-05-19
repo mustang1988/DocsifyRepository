@@ -12,7 +12,7 @@ npm i nyc -D
 
 ## 修改测试脚本
 
-修改packet.json文件中设置的测试命令, 在其前面添加
+修改package.json文件中设置的测试命令, 在其前面添加
 
 > nyc --reporter=html --reporter=text
 

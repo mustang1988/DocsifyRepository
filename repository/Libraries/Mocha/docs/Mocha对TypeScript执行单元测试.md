@@ -12,7 +12,7 @@ ts-node 是一个可以在NodeJS环境下直接运行TypeScript代码而不需�
 
 ## 为Mocha配置ts-node
 
-编辑packet.json, 在启动mocha测试的命令中, 加入ts-node
+编辑package.json, 在启动mocha测试的命令中, 加入ts-node
 
 > mocha ts-node/register ...
 
