@@ -1,6 +1,8 @@
-# ![FFmpeg](./images/logo.jpg ":size=100") FFmpeg
+# FFmpeg
 
 ---
+
+![FFmpeg](./images/title.jpg)
 
 - [FFmpeg命令常用参数](/repository/Tools/FFmpeg/docs/FFmpeg命令常用参数.md#FFmpeg命令常用参数)
   - [通用参数](/repository/Tools/FFmpeg/docs/Common/README.md#通用参数)

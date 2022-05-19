@@ -2,6 +2,8 @@
 
 ---
 
+![Languages](./images/title.png)
+
 - [C++](/repository/Languages/CPP/README.md#cpp)
 - [Java](/repository/Languages/Java/README.md#java)
 - [JavaScript](/repository/Languages/JavaScript/README.md#javascript)

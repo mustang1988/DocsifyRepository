@@ -77,3 +77,6 @@
   - [在VSCode中单步调试TypeScript](/repository/Tools/VSCode/在VSCode中单步调试TypeScript.md#在vscode中单步调试typescript)
 - [Pyinstaller](/repository/Tools/Pyinstaller/README.md#pyinstaller)
   - [Pyinstaller打包Python项目](/repository/Tools/Pyinstaller/Pyinstaller打包Python项目.md#pyinstaller打包python项目)
+- [Docsify](/repository/Tools/Docsify/README.md#docsify)
+  - [Docsify安装与配置](/repository/Tools/Docsify/docs/Docsify安装与配置.md#Docsify安装与配置)
+  - [通过GitHubPage部署Docsify编写的文档库](/repository/Tools/Docsify/docs/通过GitHubPage部署Docsify编写的文档库.md#通过GitHubPage部署Docsify编写的文档库)

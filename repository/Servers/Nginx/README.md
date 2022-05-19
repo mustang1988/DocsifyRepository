@@ -1,6 +1,8 @@
-# ![Nginx](./images/logo.png ":size=100") Nginx
+# Nginx
 
 ---
+
+![Nginx](./images/title.png)
 
 - [Nginx配置文件详解](/repository/Servers/Nginx/docs/Nginx配置文件详解.md#Nginx配置文件详解)
 - [Nginx反向代理的配置](/repository/Servers/Nginx/docs/Nginx反向代理的配置.md#Nginx反向代理的配置)

@@ -1,5 +1,7 @@
-# ![SQLite](./images/logo.png ":size=100") SQLite
+# SQLite
 
 ---
+
+![SQLite](./images/title.jpg)
 
 TODO

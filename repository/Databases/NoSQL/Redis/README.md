@@ -1,6 +1,8 @@
-# ![Redis](./images/logo.png ":size=100") Redis
+# Redis
 
 ---
+
+![Redis](./images/title.png)
 
 ?> 接下来 Ctrl+F 很有用
 

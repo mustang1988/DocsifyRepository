@@ -1,5 +1,7 @@
-# ![Obsidian](./images/logo.jpg ":size=100") Obsidian
+# Obsidian
 
 ---
+
+![Obsidian](./images/title.jpg)
 
 TODO
