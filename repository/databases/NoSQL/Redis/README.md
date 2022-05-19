@@ -2,6 +2,8 @@
 
 ---
 
+?> 接下来 Ctrl+F 很有用
+
 - [Redis常用操作](/repository/Databases/NoSQL/Redis/docs/Redis常用操作.md#redis常用操作)
   - [通用](/repository/Databases/NoSQL/Redis/docs/Generic/README.md#通用)
     - [DEL](/repository/Databases/NoSQL/Redis/docs/Generic/DEL.md#DEL)
