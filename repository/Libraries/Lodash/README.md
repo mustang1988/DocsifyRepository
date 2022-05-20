@@ -1,6 +1,8 @@
-# ![Lodash](./images/logo.png ":size=100") Lodash
+# Lodash
 
 ---
+
+![Lodash](./images/title.jpeg)
 
 - [Lodash 常用函数速查](/repository/Libraries/Lodash/docs/Lodash常用函数速查.md#lodash常用函数速查)
   - [Array相关函数](/repository/Libraries/Lodash/docs/Array.md#array相关函数)

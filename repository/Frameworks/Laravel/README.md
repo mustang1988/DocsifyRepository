@@ -1,5 +1,7 @@
-# ![Laravel](./images/logo.png ":size=100") Laravel
+# Laravel
 
 ---
+
+![Laravel](./images/title.png)
 
 TODO

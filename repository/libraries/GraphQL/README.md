@@ -1,5 +1,7 @@
-# ![GraphQL](./images/logo.png ":size=100") GraphQL
+# GraphQL
 
 ---
+
+![GraphQL](./images/title.png)
 
 TODO

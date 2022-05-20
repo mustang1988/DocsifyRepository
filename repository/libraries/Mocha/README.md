@@ -1,6 +1,8 @@
-# ![Mocha](./images/logo.png ":size=100") Mocha
+# Mocha
 
 ---
+
+![Mocha](./images/title.png) 
 
 [Mocha官网](https://mochajs.org/)
 

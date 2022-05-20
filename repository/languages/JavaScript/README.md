@@ -1,5 +1,7 @@
-# ![JavaScript](./images/logo.png ":size=100") JavaScript
+# JavaScript
 
 ---
+
+![JavaScript](./images/title.jpg)
 
 TODO

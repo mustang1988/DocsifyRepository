@@ -1,5 +1,7 @@
-# ![PyTorch](./images/logo.png ":size=100") PyTorch
+# PyTorch
 
 ---
+
+![PyTorch](./images/title.jpg)
 
 TODO

@@ -1,5 +1,7 @@
-# ![GRPC](./images/logo.png ":size=100") GRPC
+# GRPC
 
 ---
+
+![GRPC](./images/title.png)
 
 TODO

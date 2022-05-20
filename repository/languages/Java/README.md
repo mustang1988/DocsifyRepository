@@ -1,5 +1,7 @@
-# ![Java](./images/logo.png ":size=100") Java
+# Java
 
 ---
+
+![Java](./images/title.jpg)
 
 TODO
