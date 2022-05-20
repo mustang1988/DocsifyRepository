@@ -3,9 +3,21 @@
 ---
 
 - [算法](/repository/Theories/Algorithms/README.md#算法)
+
+---
+
 - [领域驱动](/repository/Theories/DomainDrivenDesign/README.md#领域驱动)
+
+---
+
 - [函数式编程](/repository/Theories/FunctionalProgramming/README.md#函数式编程)
+
+---
+
 - [计算机网络](/repository/Theories/Network/README.md#计算机网络)
+
+---
+
 - [面向对象编程](/repository/Theories/ObjectOrientedProgramming/README.md#面向对象编程)
   - [设计模式-Design Pattern](/repository/Theories/ObjectOrientedProgramming/DesignPattern/README.md#设计模式-design-pattern)
     - [创建型设计模式-Creational Patterns](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/README.md#创建型设计模式-creational-patterns)
@@ -34,4 +46,7 @@
       - [备忘录模式-Memento](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/Memento/README.md#备忘录模式-memento)
       - [模板方法模式-Template Method](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/TemplateMethod/README.md#模板方法模式-templatemethod)
       - [解释器模式-Interpreter](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/Interpreter/README.md#解释器模式-interpreter)
+
+---
+
 - [操作系统](/repository/Theories/OperatingSystem/README.md#操作系统)

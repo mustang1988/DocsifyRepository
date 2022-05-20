@@ -11,6 +11,9 @@ https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/singleto
   - [原型模式-Prototype](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/Prototype/README.md#原型模式-prototype)
   - [抽象工厂模式-Abstract Factory](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/AbstractFactory/README.md#抽象工厂模式-abstract-factory)
   - [工厂方法模式-Factory Method](/repository/Theories/ObjectOrientedProgramming/DesignPattern/CreationalPatterns/FactoryMethod/README.md#工厂方法模式-factory-method)
+
+---
+
 - [结构型设计模式-Structural Patterns](/repository/Theories/ObjectOrientedProgramming/DesignPattern/StructuralPatterns/README.md#结构型设计模式-structural-patterns)
   - [代理模式-Proxy](/repository/Theories/ObjectOrientedProgramming/DesignPattern/StructuralPatterns/Proxy/README.md#代理模式-proxy)
   - [适配器模式-Adapter](/repository/Theories/ObjectOrientedProgramming/DesignPattern/StructuralPatterns/Adapter/README.md#适配器模式-adapter)
@@ -19,6 +22,9 @@ https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/singleto
   - [外观模式-Facade](/repository/Theories/ObjectOrientedProgramming/DesignPattern/StructuralPatterns/Facade/README.md#外观模式-facade)
   - [享元模式-Flyweight](/repository/Theories/ObjectOrientedProgramming/DesignPattern/StructuralPatterns/Flyweight/README.md#享元模式-flyweight)
   - [组合模式-Composite](/repository/Theories/ObjectOrientedProgramming/DesignPattern/StructuralPatterns/Composite/README.md#组合模式-composite)
+
+---
+
 - [行为型设计模式-Behavioral Patterns](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/README.md#行为型设计模式-behavioral-patterns)
   - [策略模式-Strategy](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/Strategy/README.md#策略模式-strategy)
   - [命令模式-Command](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/Command/README.md#命令模式-command)
