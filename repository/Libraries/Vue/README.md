@@ -1,5 +1,7 @@
-# ![VueJS](./images/logo.png ":size=100") VueJS
+# VueJS
 
 ---
+
+![VueJS](./images/title.png)
 
 TODO

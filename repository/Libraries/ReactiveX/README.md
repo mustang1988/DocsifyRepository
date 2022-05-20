@@ -1,5 +1,7 @@
-# ![ReactiveX](./images/logo.png ":size=100") ReactiveX
+# ReactiveX
 
 ---
+
+![ReactiveX](./images/title.jpg) 
 
 TODO

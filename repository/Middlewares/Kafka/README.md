@@ -1,5 +1,7 @@
-# ![Apache Kafka](./images/logo.png ":size=100") Apache Kafka
+# Apache Kafka
 
 ---
+
+![Apache Kafka](./images/title.jpg)
 
 TODO

@@ -2,6 +2,6 @@
 
 ---
 
-![PyTorch](./images/title.jpg)
+![PyTorch](./images/title.png)
 
 TODO

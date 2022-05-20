@@ -1,5 +1,7 @@
-# ![ReactJS](./images/logo.png ":size=100") ReactJS
+# ReactJS
 
 ---
+
+![ReactJS](./images/title.jpg)
 
 TODO

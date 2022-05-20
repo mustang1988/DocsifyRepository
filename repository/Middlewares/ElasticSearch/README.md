@@ -1,5 +1,7 @@
-# ![ElasticSearch](./images/logo.png ":size=100") ElasticSearch
+# ElasticSearch
 
 ---
+
+![ElasticSearch](./images/title.png) 
 
 TODO

@@ -1,5 +1,7 @@
-# ![Nanoid](./images/logo.png ":size=100") Nanoid
+# Nanoid
 
 ---
+
+![Nanoid](./images/title.png)
 
 TODO

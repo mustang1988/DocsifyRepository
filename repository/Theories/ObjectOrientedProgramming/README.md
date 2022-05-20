@@ -2,6 +2,8 @@
 
 ---
 
+![面向对象编程](./images/title.jpg)
+
 参考: https://github.com/iluwatar/java-design-patterns
 
 - [设计模式-Design Pattern](/repository/Theories/ObjectOrientedProgramming/DesignPattern/README.md#设计模式-design-pattern)

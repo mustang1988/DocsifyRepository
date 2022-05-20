@@ -1,5 +1,7 @@
-# ![RabbitMQ](./images/logo.jpg ":size=100") RabbitMQ
+# RabbitMQ
 
 ---
+
+![RabbitMQ](./images/title.png)
 
 TODO

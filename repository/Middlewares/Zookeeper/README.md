@@ -1,5 +1,7 @@
-# ![Apache Zookeeper](./images/logo.png ":size=100") Apache Zookeeper
+# Apache Zookeeper
 
 ---
+
+![Apache Zookeeper](./images/title.png)
 
 TODO
