@@ -2,8 +2,8 @@
 
 ---
 
-- [isNil](/repository/Libraries/Lodash/isNil.md#isnil)
-- [isNull](/repository/Libraries/Lodash/isNull.md#isnull)
-- [isDate](/repository/Libraries/Lodash/isDate.md#isdate)
-- [clone](/repository/Libraries/Lodash/clone.md#clone)
-- [cloneDeep](/repository/Libraries/Lodash/cloneDeep.md#cloneDeep)
+- [isNil](/repository/Libraries/Lodash/docs/isNil.md#isnil)
+- [isNull](/repository/Libraries/Lodash/docs/isNull.md#isnull)
+- [isDate](/repository/Libraries/Lodash/docs/isDate.md#isdate)
+- [clone](/repository/Libraries/Lodash/docs/clone.md#clone)
+- [cloneDeep](/repository/Libraries/Lodash/docs/cloneDeep.md#cloneDeep)

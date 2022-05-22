@@ -2,5 +2,5 @@
 
 ---
 
-- [camelCase](/repository/Libraries/Lodash/camelCase.md#camelcase)
-- [capitalize](/repository/Libraries/Lodash/capitalize.md#capitalize)
+- [camelCase](/repository/Libraries/Lodash/docs/camelCase.md#camelcase)
+- [capitalize](/repository/Libraries/Lodash/docs/capitalize.md#capitalize)

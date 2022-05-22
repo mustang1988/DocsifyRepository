@@ -37,10 +37,10 @@
 
 执行源码目录中的 *GenerateProjectFiles.bat* 脚本文件, 会在目录下生成 VS 用解决方案文件 *UE4.sln*
 
-![UE源码目录](./images/UE源码目录.png)
+![UE源码目录](../images/UE源码目录.png)
 
 ## 编译&调试
 
 使用 Visual Studio 打开 *UE4.sln*, 将运行模式调整为开发模式, 即可开始编译与调试, 初次编译大约需要消耗10~40分钟的时间, 具体时长视开发机配置而定
 
-![UE_VS](./images/UE_VS.PNG)
+![UE_VS](../images/UE_VS.PNG)

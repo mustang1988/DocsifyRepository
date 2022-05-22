@@ -2,8 +2,8 @@
 
 ---
 
-- [clamp](/repository/Libraries/Lodash/clamp.md#clamp)
-- [mean](/repository/Libraries/Lodash/mean.md#mean)
-- [meanBy](/repository/Libraries/Lodash/meanBy.md#meanBy)
-- [inRange](/repository/Libraries/Lodash/inRange.md#inRange)
-- [random](/repository/Libraries/Lodash/random.md#random)
+- [clamp](/repository/Libraries/Lodash/docs/clamp.md#clamp)
+- [mean](/repository/Libraries/Lodash/docs/mean.md#mean)
+- [meanBy](/repository/Libraries/Lodash/docs/meanBy.md#meanBy)
+- [inRange](/repository/Libraries/Lodash/docs/inRange.md#inRange)
+- [random](/repository/Libraries/Lodash/docs/random.md#random)

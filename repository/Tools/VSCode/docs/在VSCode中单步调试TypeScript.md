@@ -12,11 +12,11 @@
 
 在打开的面板中点击"Run and Debug"按钮下方的"create a launch.json file"
 
-![](./images/TypeScript在VSCode中单步调试_1.png)
+![](../images/TypeScript在VSCode中单步调试_1.png)
 
 在弹出的选择窗中选择"Node.js"
 
-![](./images/TypeScript在VSCode中单步调试_2.png)
+![](../images/TypeScript在VSCode中单步调试_2.png)
 
 此时会在项目目录下".vscode"目录中创建名为"launch.json"的配置文件
 
@@ -73,7 +73,7 @@ launch.json配置文件默认内容:
 
 当运行到断点所在函数时, 会进入调试模式, 顶部会有单步调试按钮
 
-![](./images/TypeScript在VSCode中单步调试_3.png)
+![](../images/TypeScript在VSCode中单步调试_3.png)
 
 单步调试按钮
 - 顺序执行(F9)
@@ -85,4 +85,4 @@ launch.json配置文件默认内容:
 
 调试过程中左侧面板会显示当前调用的堆栈列表和变量当前值
 
-![](./images/TypeScript在VSCode中单步调试_4.png)
+![](../images/TypeScript在VSCode中单步调试_4.png)

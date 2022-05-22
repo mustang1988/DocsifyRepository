@@ -8,7 +8,7 @@
 
 ## 命令语法
 
-> LPUSHX key 
+> LPUSHX key element [element ...]
 
 ## 作用
 
