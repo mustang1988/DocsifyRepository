@@ -2,6 +2,9 @@
 
 ---
 
+?> Redis 中的 List 是一个简单的字符串列表, 按照存入的顺序进行排序, 允许从列表的前端(left)和末尾(right)向列表中添加新元素.<br/>
+<!-- Redis Lists are simply lists of strings, sorted by insertion order. It is possible to add elements to a Redis List pushing new elements on the head (on the left) or on the tail (on the right) of the list -->
+
 - [LINDEX](/repository/Databases/NoSQL/Redis/docs/List/LINDEX.md#LINDEX)
 - [LINSERT](/repository/Databases/NoSQL/Redis/docs/List/LINSERT.md#LINSERT)
 - [LLEN](/repository/Databases/NoSQL/Redis/docs/List/LLEN.md#LLEN)
