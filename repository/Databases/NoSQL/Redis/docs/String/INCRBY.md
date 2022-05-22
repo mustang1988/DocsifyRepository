@@ -16,6 +16,8 @@
 
 类似于[INCR](/repository/Databases/NoSQL/Redis/docs/String/INCR.md), 不同之处在于, [INCR](/repository/Databases/NoSQL/Redis/docs/String/INCR.md)固定+1, 而INCRBY可以指定加的数值
 
+!> 该操作对数值的范围有限制, 限制为64位带符号整数(-2^63, 2^63-1)
+
 ## 复杂性
 
 - 时间复杂度
