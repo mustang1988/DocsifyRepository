@@ -55,7 +55,7 @@
       - [-t](/repository/Tools/FFmpeg/docs/Clipping/-t.md#t)
   - [FFmpeg常用处理命令](/repository/Tools/FFmpeg/docs/FFmpeg常用处理命令.md#ffmpeg常用处理命令)
     - [将视频转码为支持Web页面Video标签播放的格式](/repository/Tools/FFmpeg/docs/Commands/将视频转码为支持Web页面Video标签播放的格式.md#将视频转码为支持web页面video标签播放的格式)
-      - [H.264视频转码后画面失真问题研究](/repository/Tools/FFmpeg/docs/H.264视频转码后画面失真问题研究.md#h264视频转码后画面失真问题研究)
+    - [H.264视频转码后画面失真问题研究](/repository/Tools/FFmpeg/docs/H.264视频转码后画面失真问题研究.md#h264视频转码后画面失真问题研究)
     - [为无音频流的视频文件添加空白音频流](/repository/Tools/FFmpeg/docs/Commands/为无音频流的视频文件添加空白音频流.md#为无音频流的视频文件添加空白音频流)
     - [视频文件生成预览图序列](/repository/Tools/FFmpeg/docs/Commands/视频文件生成预览图序列.md#视频文件生成预览图序列)
     - [获取视频指定帧的画面图片](/repository/Tools/FFmpeg/docs/Commands/获取视频指定帧的画面图片.md#获取视频指定帧的画面图片)
@@ -69,7 +69,8 @@
     - [-select_streams](/repository/Tools/FFmpeg/docs/FFprobe/-select_streams.md#select_streams)
     - [-show_entries](/repository/Tools/FFmpeg/docs/FFprobe/-show_entries.md#show_entries)
     - [-of](/repository/Tools/FFmpeg/docs/FFprobe/-of.md#of)
-
+  - [FFprobe常用处理命令](/repository/Tools/FFmpeg/docs/FFprobe常用处理命令.md#ffprobe常用处理命令)
+    - [获取媒体文件元信息](/repository/Tools/FFmpeg/docs/Commands/获取媒体文件元信息.md#获取媒体文件元信息)
 
 
 

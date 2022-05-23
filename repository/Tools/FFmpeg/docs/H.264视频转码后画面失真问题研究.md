@@ -143,19 +143,19 @@
 
   使用命令如下
 
-  ```bash
-  ffmpeg \
-  -i test_fps_59.94_010.mp4 \
-  -c:v libx264 \
-  -c:a aac \
-  -r 60000/1001 \
-  -pix_fmt yuv420p \
-  -b:v 5M \
-  -preset ultrafast \
-  -y \
-  -f mp4 \
-  test_fps_59.94_010.video_rate_5M.mp4
-  ```
+```bash
+ffmpeg \
+-i test_fps_59.94_010.mp4 \
+-c:v libx264 \
+-c:a aac \
+-r 60000/1001 \
+-pix_fmt yuv420p \
+-b:v 5M \
+-preset ultrafast \
+-y \
+-f mp4 \
+test_fps_59.94_010.video_rate_5M.mp4
+```
 
   转码输出文件信息如下
 
