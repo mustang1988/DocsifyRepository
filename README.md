@@ -139,6 +139,11 @@
 - [框架](/repository/Frameworks/README.md#框架)
   - [EggJS](/repository/Frameworks/Egg/README.md#eggjs)
     - [Application生命周期函数](/repository/Frameworks/Egg/docs/Application生命周期函数.md#application生命周期函数)
+    - [EggJS插件](/repository/Frameworks/Egg/docs/Plugins/README.md#eggjs-插件)
+      - [egg-sequelize](/repository/Frameworks/Egg/docs/Plugins/egg-sequelize.md#egg-sequelize)
+      - [egg-mongoose](/repository/Frameworks/Egg/docs/Plugins/egg-mongoose.md#egg-mongoose)
+      - [egg-graphql](/repository/Frameworks/Egg/docs/Plugins/egg-graphql.md#egg-graphql)
+      - [egg-socket.io](/repository/Frameworks/Egg/docs/Plugins/egg-socket.io.md#egg-socketio)
     
   ---
 
@@ -378,6 +383,8 @@
 
   - [VSCode](/repository/Tools/VSCode/README.md#vscode)
     - [在VSCode中单步调试TypeScript](/repository/Tools/VSCode/docs/在VSCode中单步调试TypeScript.md#在vscode中单步调试typescript)
+    - [VSCode插件](/repository/Tools/VSCode/docs/Plugins/README.md#vscode-插件)
+      - [ProjectManager](/repository/Tools/VSCode/docs/Plugins/ProjectManager.md#projectmanager)
     
   ---
 
