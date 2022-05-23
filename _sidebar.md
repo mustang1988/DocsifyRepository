@@ -264,6 +264,7 @@
   - [Docsify](/repository/Tools/Docsify/README.md#docsify)
     - [Docsify安装与配置](/repository/Tools/Docsify/docs/Docsify安装与配置.md#Docsify安装与配置)
     - [通过GitHubPage部署Docsify编写的文档库](/repository/Tools/Docsify/docs/通过GitHubPage部署Docsify编写的文档库.md#通过GitHubPage部署Docsify编写的文档库)
+  - [Dash/Zeal](/repository/Tools/Dash_Zeal/README.md#dashzeal)
 - [理论](/repository/Theories/README.md#理论)
   - [算法](/repository/Theories/Algorithms/README.md#算法)
   - [领域驱动](/repository/Theories/DomainDrivenDesign/README.md#领域驱动)
