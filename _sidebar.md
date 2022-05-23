@@ -111,6 +111,7 @@
   - [TensorFlow](/repository/Frameworks/TensorFlow/README.md#tensorflow)
 - [库](/repository/Libraries/README.md#库)
   - [GraphQL](/repository/Libraries/GraphQL/README.md#graphql)
+    - [GraphQL Schema定义](/repository/Libraries/GraphQL/docs/GraphQLSchema定义.md#graphql-schema定义)
   - [GRPC](/repository/Libraries/GRPC/README.md#grpc)
   - [Lodash](/repository/Libraries/Lodash/README.md#lodash)
     - [Lodash 常用函数速查](/repository/Libraries/Lodash/docs/Lodash常用函数速查.md#lodash常用函数速查)

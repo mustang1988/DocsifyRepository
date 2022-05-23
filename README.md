@@ -165,6 +165,7 @@
 
 - [库](/repository/Libraries/README.md#库)
   - [GraphQL](/repository/Libraries/GraphQL/README.md#graphql)
+    - [GraphQL Schema定义](/repository/Libraries/GraphQL/docs/GraphQLSchema定义.md#graphql-schema定义)
     
   ---
 
