@@ -254,6 +254,7 @@
     - [Notion中如何使用任意字体颜色](/repository/Tools/Notion/docs/Notion中如何使用任意字体颜色.md#notion中如何使用任意字体颜色)
   - [NPM](/repository/Tools/NPM/README.md#npm)
     - [如何在NPM上发布自己的包](/repository/Tools/NPM/docs/如何在NPM上发布自己的包.md#如何在NPM上发布自己的包)
+    - [NPX](/repository/Tools/NPM/docs/NPX.md#NPX)
   - [Obsidian](/repository/Tools/Obsidian/README.md#obsidian)
   - [VSCode](/repository/Tools/VSCode/README.md#vscode)
     - [在VSCode中单步调试TypeScript](/repository/Tools/VSCode/docs/在VSCode中单步调试TypeScript.md#在vscode中单步调试typescript)

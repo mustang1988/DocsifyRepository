@@ -116,6 +116,7 @@
 
 - [NPM](/repository/Tools/NPM/README.md#npm)
   - [如何在NPM上发布自己的包](/repository/Tools/NPM/如何在NPM上发布自己的包.md#如何在NPM上发布自己的包)
+  - [NPX](/repository/Tools/NPM/docs/NPX.md#NPX)
 
 ---
 

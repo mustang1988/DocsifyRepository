@@ -151,11 +151,11 @@
     
   ---
 
-  - [Spring](/repository/Frameworks/Spring/README.md#spring)
+  - [PyTorch](/repository/Frameworks/PyTorch/README.md#pytorch)
     
   ---
 
-  - [PyTorch](/repository/Frameworks/PyTorch/README.md#pytorch)
+  - [Spring](/repository/Frameworks/Spring/README.md#spring)
     
   ---
 
@@ -374,6 +374,7 @@
 
   - [NPM](/repository/Tools/NPM/README.md#npm)
     - [如何在NPM上发布自己的包](/repository/Tools/NPM/docs/如何在NPM上发布自己的包.md#如何在NPM上发布自己的包)
+    - [NPX](/repository/Tools/NPM/docs/NPX.md#NPX)
     
   ---
 
