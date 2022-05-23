@@ -24,53 +24,21 @@ pip install pyinstaller
 
 ### Pyinstaller 参数详解
 
-- --distpath DIR
-
-  打包后的输出路径, 可选参数, 默认值: ./dist
-
-- --workpath WORKPATH
-
-  打包编译的临时路径, 可选参数, 默认值: ./build
-
-- --clean
-
-  执行构建前清空缓存和临时目录
-
-- --log-level LEVEL
-
-  构建时控制台输出日志级别, 可选参数, 默认值: INFO
-
-- -D 或 --onedir
-
-  构建并输出包含可执行文件的目录
-
-- -F 或 --onefile
-
-  构建并输出单一可执行文件
-
-- --specpath DIR
-
-  存储构建生成的spec文件的目录
-
-- -n NAME 或 --name NAME
-
-  输出可执行文件的名称, 可选参数, 默认值: 同入口py脚本文件名
-
-- --add-data <SRC;DEST or SRC:DEST>
-
-  添加静态资源文件或文件夹
-
-- -add-binary <SRC;DEST or SRC:DEST>
-
-  添加可执行文件或文件夹
-
-- -p DIR 或 --paths DIR
-
-  代码引用文件检索目录
-
-- -hidden-import MODULENAME 或 --hiddenimport MODULENAME
-
-  代码中非直接引用的模块或脚本名称
+|参数|作用|默认值|
+|:-|:-|:-|
+|--distpath DIR|打包后的输出路径, 可选参数|./dist|
+|--workpath WORKPATH|打包编译的临时路径, 可选参数|./build|
+|--clean|执行构建前清空缓存和临时目录||
+|--log-level LEVEL|构建时控制台输出日志级别, 可选参数|INFO|
+|-D, --onedir|构建并输出包含可执行文件的目录||
+|-F, --onefile|构建并输出单一可执行文件||
+|--specpath DIR|存储构建生成的spec文件的目录||
+|-n NAME, --name NAME|输出可执行文件的名称, 可选参数|同入口py脚本文件名|
+|--add-data <SRC;DEST or SRC:DEST>|添加静态资源文件或文件夹||
+|-add-binary <SRC;DEST or SRC:DEST>|添加可执行文件或文件夹|| 
+|-p DIR, --paths DIR|代码引用文件检索目录|| 
+|-hidden-import MODULENAME, --hiddenimport MODULENAME|代码中非直接引用的模块或脚本名称|| 
+|||| 
 
 ### spec 配置文件详解
 
@@ -84,8 +52,6 @@ pip install pyinstaller
 # -*- mode: python -*-
 
 block_cipher = None
-
-
 a = Analysis(['入口py脚本'],
        pathex=['入口py脚本所在目录'],
        binaries=[],
