@@ -84,13 +84,13 @@ exe = EXE(pyz,
 该配置文件中, 支持上述罗列的 pyinstaller 参数
 
 其中
-- Analysis 下的 pathex 作用等同于命令参数 [-p DIR 或 --paths DIR](https://www.notion.so/p-DIR-paths-DIR-c143841ab0b9459994e26b3937fbfa10)
-- Analysis 下的 datas 作用等同于命令参数 [--add-data <SRC;DEST or SRC:DEST>](https://www.notion.so/add-data-SRC-DEST-or-SRC-DEST-8479e6115ae94731b1d69e48622f7a17)
-- Analysis 下的 binaries 作用等同于命令参数 [-add-binary <SRC;DEST or SRC:DEST>](https://www.notion.so/add-binary-SRC-DEST-or-SRC-DEST-4e7ecd1a309041ad826934a234cb5ff5)
+- Analysis 下的 pathex 作用等同于命令参数 [-p DIR 或 --paths DIR]
+- Analysis 下的 datas 作用等同于命令参数 [--add-data <SRC;DEST or SRC:DEST>]
+- Analysis 下的 binaries 作用等同于命令参数 [-add-binary <SRC;DEST or SRC:DEST>]
 - Analysis 下的 hiddenimports 作用等同于命令参数 [-hidden-import MODULENAME
 或
- --hiddenimport MODULENAME](https://www.notion.so/hidden-import-MODULENAME-hiddenimport-MODULENAME-23223a66c2d7424093cec5372a74ea6a)
-- EXE 下的 name 作用等同于命令参数 [-n NAME 或 --name NAME](https://www.notion.so/n-NAME-name-NAME-61e27461fc054d7888632040dcb721d7)
+ --hiddenimport MODULENAME]
+- EXE 下的 name 作用等同于命令参数 [-n NAME 或 --name NAME]
 
 ### 静态资源文件的打包
 
@@ -100,7 +100,7 @@ exe = EXE(pyz,
 a = Analysis(['入口py脚本'],
        pathex=['入口py脚本所在目录'],
        binaries=[],
-       datas=[('a.txt','a.txt'),('assert','assert')],
+       datas=[('a.txt','a.txt'),('assert','assert')], # 静态文件/静态文件目录打包配置
        hiddenimports=[],
        hookspath=[],
        runtime_hooks=[],

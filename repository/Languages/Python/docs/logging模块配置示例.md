@@ -10,7 +10,7 @@ logging模块是可以免配置直接使用的, 但默认提供的日志输出�
 
 ## Dict 配置
 
-顾名思义, 即在.py代码中通过声明一个dirt来配置
+顾名思义, 即在.py代码中通过声明一个dict来配置
 
 ### Dict 配置示例
 
@@ -81,7 +81,7 @@ config = {
 }
 ```
 
-### Dirt 配置获取Logger对象和使用示例
+### Dict配置获取Logger对象和使用示例
 
 ```python
 # logger.py
@@ -92,11 +92,11 @@ logger = logging.getLogger('分类1')
 logger.info('xxx', 'yyy')
 ```
 
-## ini 文件配置
+## ini文件配置
 
 即通过在项目下指定的.ini配置文件来配置日志模块
 
-### ini 配置文件示例
+### ini配置文件示例
 
 ```ini
 # log.conf / log.ini
@@ -150,7 +150,7 @@ args=('/logs/分类3.log',)
 format=[%(asctime)s] [%(levelname)s] [%(name)s]: %(message)s
 ```
 
-### ini 配置获取Logger对象和使用示例
+### ini配置获取Logger对象和使用示例
 
 ```python
 # logger.py
