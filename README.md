@@ -348,6 +348,7 @@
       - [为无音频流的视频文件添加空白音频流](/repository/Tools/FFmpeg/docs/Commands/为无音频流的视频文件添加空白音频流.md#为无音频流的视频文件添加空白音频流)
       - [视频文件生成预览图序列](/repository/Tools/FFmpeg/docs/Commands/视频文件生成预览图序列.md#视频文件生成预览图序列)
       - [获取视频指定帧的画面图片](/repository/Tools/FFmpeg/docs/Commands/获取视频指定帧的画面图片.md#获取视频指定帧的画面图片)
+      - [FFmpeg创建纯色视频文件](/repository/Tools/FFmpeg/docs/FFmpeg创建纯色视频文件.md#ffmpeg创建纯色视频文件)
     - [FFprobe命令常用参数](/repository/Tools/FFmpeg/docs/FFprobe命令常用参数.md#FFprobe命令常用参数)
       - [-i](/repository/Tools/FFmpeg/docs/FFprobe/-i.md#i)
       - [-v](/repository/Tools/FFmpeg/docs/FFprobe/-v.md#v)
