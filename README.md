@@ -364,7 +364,8 @@
   ---
 
   - [Git](/repository/Tools/Git/README.md#git)
-    - [Git Workflow](/repository/Tools/Git/docs/GitWorkflow.md#GitWorkflow)
+    - [Git工作流](/repository/Tools/Git/docs/GitWorkflow.md#GitWorkflow)
+    - [约定式提交](/repository/Tools/Git/docs/ConventionalCommits.md#约定式提交)
     
   ---
 
