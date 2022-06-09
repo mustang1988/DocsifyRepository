@@ -8,6 +8,7 @@
 ---
 
 - [FFmpeg](/repository/Tools/FFmpeg/README.md#ffmpeg)
+  - [Windows下编译支持NVENC编码器的FFmpeg](/repository/Tools/FFmpeg/docs/Windows下编译支持NVENC编码器的FFmpeg.md#windows下编译支持nvenc编码器的ffmpeg)
   - [FFmpeg命令常用参数](/repository/Tools/FFmpeg/docs/FFmpeg命令常用参数.md#FFmpeg命令常用参数)
     - [通用参数](/repository/Tools/FFmpeg/docs/Common/README.md#通用参数)
       - [-i](/repository/Tools/FFmpeg/docs/Common/-i.md#i)
@@ -106,7 +107,7 @@
 ---
 
 - [Git](/repository/Tools/Git/README.md#git)
-  - [Git工作流](/repository/Tools/Git/docs/GitWorkflow.md#GitWorkflow)
+  - [Git工作流](/repository/Tools/Git/docs/Gitflow.md#GitWorkflow)
   - [约定式提交](/repository/Tools/Git/docs/ConventionalCommits.md#约定式提交)
 
 ---

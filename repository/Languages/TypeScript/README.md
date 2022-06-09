@@ -4,8 +4,6 @@
 
 ![TypeScript](./images/title.png)
 
-TODO
-
 ---
 
 - 其他关联
