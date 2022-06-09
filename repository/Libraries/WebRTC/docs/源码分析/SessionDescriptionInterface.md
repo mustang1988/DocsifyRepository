@@ -1,4 +1,4 @@
-# IceCandidateInterface 源码分析
+# RTCSessionDescription 源码分析
 
 ---
 
@@ -13,5 +13,5 @@ src/api/jsep.h
 ## 类声明
 
 ```cpp
-class RTC_EXPORT IceCandidateInterface
+class RTC_EXPORT SessionDescriptionInterface
 ```

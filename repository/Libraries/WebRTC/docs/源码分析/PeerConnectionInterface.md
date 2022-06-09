@@ -15,5 +15,3 @@ src/api/peer_connection_interface.h
 ```cpp
 class RTC_EXPORT PeerConnectionInterface : public rtc::RefCountInterface
 ```
-
-## 解析
