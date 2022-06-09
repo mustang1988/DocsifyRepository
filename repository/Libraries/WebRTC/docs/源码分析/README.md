@@ -100,43 +100,36 @@ note left
 CallerPeerConnection.setRemoteDescription(Anwser);
 end note
 
-推流端 -> ICE服务: 18. 推流端请求ICE服务获取自己的NAT信息
+推流端 -> ICE服务: 18. 推流端请求ICE服务获取自己的Relay NAT信息
 
 activate ICE服务
-ICE服务 -> 推流端: 19. ICE服务返回推流端的NAT信息Cadicate
+ICE服务 -> 推流端: 19. ICE服务返回推流端的Relay NAT信息CallerCadicate
 
-推流端 -> 推流端: 20. 推流端将获取到的NAT信息设置到RTCPeerconnection对象中
-note left
-CallerPeerConnection.addIceCandidate(Cadicate);
-end note
+推流端 -> 信令服务: 20. 推流端将自己的CallerCadicate发送到信令服务
 
-推流端 -> 信令服务: 21. 推流端将自己的Cadicate发送到信令服务
+信令服务 -> 收流端: 21. 信令服务将推流端发送来的CallerCadicate推送给收流端
 
-信令服务 -> 收流端: 22. 信令服务将推流端发送来的Cadicate推送给收流端
-
-收流端 -> 收流端: 23. 收流端将收到的Cadicate设置到RTCPeerconnection对象中
+收流端 -> 收流端: 22. 收流端将收到的CallerCadicate设置到RTCPeerconnection对象中
 note right
-ReceiverRTCPeerConnection.addIceCandidate(Cadicate);
+ReceiverRTCPeerConnection.addIceCandidate(CallerCadicate);
 end note
 
-收流端 -> 收流端: 24. 收流端请求ICE服务获取自己的NAT信息
+收流端 -> ICE服务: 23. 收流端请求ICE服务获取自己的Relay NAT信息
 
-ICE服务 -> 收流端: 25. ICE服务返回收流端的NAT信息Cadicate
+ICE服务 -> 收流端: 24. ICE服务返回收流端的Relay NAT信息ReceiverCadicate
 
-收流端 -> 收流端: 26. 收流端将自己的Cadicate设置到RTCPeerconnection对象中
+收流端 -> 信令服务: 25. 收流端将自己的ReceiverCadicate发送到信令服务
 
-收流端 -> 信令服务: 27. 收流端将自己的Cadicate发送到信令服务
+信令服务 -> 推流端: 26. 信令服务将收流端发送来的ReceiverCadicate推送给推流端
 
-信令服务 -> 推流端: 28. 信令服务将收流端发送来的Cadicate推送给推流端
-
-推流端 -> 推流端: 29. 推流端将信令推送来的Cadicate设置到RTCPeerconnection对象中
+推流端 -> 推流端: 27. 推流端将信令推送来的ReceiverCadicate设置到RTCPeerconnection对象中
 note left
-CallerPeerConnection.addIceCandidate(Cadicate);
+CallerPeerConnection.addIceCandidate(ReceiverCadicate);
 end note
 
-推流端 <-> 收流端: 30. 推流端和收流端使用各自在RTCPeerconnection对象中持有的Cadicate信息建立端对端连接
+推流端 <-> 收流端: 28. 推流端和收流端使用各自在RTCPeerconnection对象中持有的对方的Relay NAT信息建立端对端连接
 
-推流端 -> 收流端: 31. 推拉音视频流
+推流端 <-> 收流端: 29. 推拉音视频流
 
 @enduml
 ```
