@@ -2,7 +2,7 @@
 
 ---
 
-![TypeScript](./images/title.png)
+[![TypeScript](./images/title.png)](https://www.typescriptlang.org/)
 
 ---
 

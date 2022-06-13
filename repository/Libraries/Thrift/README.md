@@ -2,6 +2,6 @@
 
 ---
 
-![Apache Thrift](./images/title.png)
+[![Apache Thrift](./images/title.png)](https://thrift.apache.org/)
 
-!> 该文档尚未完成 **TODO**
+!> 该文档内容待补充 **TODO**

@@ -1,5 +1,7 @@
-# ![C++](./images/logo.png ":size=100") C++
+# C++
 
 ---
 
-!> 该文档尚未完成 **TODO**
+[![C++](../CPP/images/title.png)](https://www.cplusplus.com/)
+
+!> 该文档内容待补充 **TODO**

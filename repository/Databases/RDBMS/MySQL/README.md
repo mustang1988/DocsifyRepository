@@ -2,6 +2,6 @@
 
 ---
 
-![MySQL](./images/title.jpg)
+[![MySQL](./images/title.jpg)](https://www.mysql.com/)
 
-!> 该文档尚未完成 **TODO**
+!> 该文档内容待补充 **TODO**
