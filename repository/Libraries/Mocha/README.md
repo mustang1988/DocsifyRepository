@@ -2,9 +2,7 @@
 
 ---
 
-![Mocha](./images/title.png) 
-
-[Mocha官网](https://mochajs.org/)
+[![Mocha](./images/title.png) ](https://mochajs.org/)
 
 ---
 

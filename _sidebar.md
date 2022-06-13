@@ -156,8 +156,6 @@
     - [Mocha常用命令参数](/repository/Libraries/Mocha/docs/Mocha常用命令参数.md#mocha常用命令参数)
     - [Mocha生成单元测试覆盖率报告](/repository/Libraries/Mocha/docs/Mocha生成单元测试覆盖率报告.md#mocha生成单元测试覆盖率报告)
     - [Mocha对TypeScript执行单元测试](/repository/Libraries/Mocha/docs/Mocha对TypeScript执行单元测试.md#mocha对typescript执行单元测试)
-  - [Nanoid](/repository/Libraries/Nanoid/README.md#nanoid)
-  - [ReactiveX](/repository/Libraries/ReactiveX/README.md#reactivex)
   - [Apache Thrift](/repository/Libraries/Thrift/README.md#thrift)
   - [Mongoose](/repository/Libraries/Mongoose/README.md#mongoose)
     - [存储Object类型数据时设置默认值{}无效的问题](/repository/Libraries/Mongoose/docs/存储Object类型数据时设置默认值{}无效的问题.md#存储object类型数据时设置默认值无效的问题)
