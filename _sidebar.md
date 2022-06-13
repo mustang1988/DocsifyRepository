@@ -9,8 +9,6 @@
 - [数据库](/repository/Databases/README.md#数据库)
   - [关系型数据库](/repository/Databases/RDBMS/README.md#关系型数据库)
     - [MySQL](/repository/Databases/RDBMS/MySQL/README.md#mysql)
-    - [PostgreSQL](/repository/Databases/RDBMS/PostgreSQL/README.md#postgresql)
-    - [SQLite](/repository/Databases/RDBMS/SQLite/README.md#sqlite)
   - [非关系型数据库](/repository/Databases/NoSQL/README.md#非关系型数据库)
     - [MongoDB](/repository/Databases/NoSQL/MongoDB/README.md#mongodb)
       - [MongoDB数据本分与恢复](/repository/Databases/NoSQL/MongoDB/docs/MongoDB数据本分与恢复.md#mongodb数据本分与恢复)

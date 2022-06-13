@@ -34,14 +34,6 @@
   - [关系型数据库](/repository/Databases/RDBMS/README.md#关系型数据库)
     - [MySQL](/repository/Databases/RDBMS/MySQL/README.md#mysql)
     
-    ---
-    
-    - [PostgreSQL](/repository/Databases/RDBMS/PostgreSQL/README.md#postgresql)
-    
-    ---
-    
-    - [SQLite](/repository/Databases/RDBMS/SQLite/README.md#sqlite)
-    
   ---
 
   - [非关系型数据库](/repository/Databases/NoSQL/README.md#非关系型数据库)
