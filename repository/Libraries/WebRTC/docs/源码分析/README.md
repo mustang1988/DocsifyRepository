@@ -17,6 +17,8 @@ entity 信令服务
 entity ICE服务
 entity 收流端
 
+==连接准备阶段==
+
 activate 推流端
 
 推流端 -> 信令服务: 1. 推流端与信令服务建立WebSocket连接
@@ -28,6 +30,8 @@ activate 信令服务
 activate 收流端
 
 信令服务 -> 推流端: 3. 信令服务通知推流端, 收流端已上线
+
+==连接初始化阶段==
 
 推流端 -> 推流端: 4. 创建RTCPeerconnection对象
 note left
@@ -61,6 +65,8 @@ end note
 note left
 CallerPeerConnection.setLocalDescription(CallerOfferSDP);
 end note
+
+==协议协商阶段==
 
 推流端 -> 信令服务: 9. 推流端将Offer发送到信令服务
 
@@ -126,6 +132,8 @@ ICE服务 -> 收流端: 24. ICE服务返回收流端的Relay NAT信息ReceiverCa
 note left
 CallerPeerConnection.addIceCandidate(ReceiverCadicate);
 end note
+
+==连接建立阶段==
 
 推流端 <-> 收流端: 28. 推流端和收流端使用各自在RTCPeerconnection对象中持有的对方的Relay NAT信息建立端对端连接
 

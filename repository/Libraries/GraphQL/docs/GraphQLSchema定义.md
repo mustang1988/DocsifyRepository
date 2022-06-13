@@ -112,13 +112,14 @@ GraphQL的Schema定义中可以限定属性的空/非空
 
 对于列表类i选哪个, 非空限定符*!*既可以在列表类型[]之后也可以在列表[]之中, 分别表示不同的空值限定
 
-- 在[]之后, 表示该列表类型的属性不能为空值(null), 可以是空列表([])
-- 在[]之内, 表示该列表类型中的值不允许为空值(null), 可以是空列表([])
+- 在[]***后***, 表示该列表类型的属性的值不能为null, 但可以是空列表([]), 其中的元素可以为null
+- 在[]***内***, 表示该列表类型的属性的值不能为null, 但可以是空列表([]), 其中的元素也不允许为null
 
 示例
 
+设有如下Schema定义:
+
 ```graphql
-# 设有如下Schema定义
 type User {
     id: ID!
     friends: [User]!
@@ -126,19 +127,19 @@ type User {
 }
 ```
 
-则
+则空/非空限定的检查结果:
 
 ```json
-// 
+// sample 1
 {
-    "id": null, // schema检查不通过
-    "friends": [], // schema检查通过
-    "parents": [], // schema检查通过
+    "id": null,                 // invalid
+    "friends": [],              // pass
+    "parents": []               // pass
 }
-
+// sample 2
 {
-    "id": "1", // schema检查通过
-    "friends": null, // schema检查不通过
-    "parents": ["mother", null], // schema检查不通过
+    "id": "1",                  // pass
+    "friends": null,            // invalid
+    "parents": ["mother", null] // invalid
 }
 ```
