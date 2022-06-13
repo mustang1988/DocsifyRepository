@@ -371,10 +371,6 @@
     
   ---
 
-  - [Obsidian](/repository/Tools/Obsidian/README.md#obsidian)
-    
-  ---
-
   - [VSCode](/repository/Tools/VSCode/README.md#vscode)
     - [在VSCode中单步调试TypeScript](/repository/Tools/VSCode/docs/在VSCode中单步调试TypeScript.md#在vscode中单步调试typescript)
     - [VSCode插件](/repository/Tools/VSCode/docs/Plugins/README.md#vscode-插件)
@@ -398,11 +394,7 @@
 
 - [理论](/repository/Theories/README.md#理论)
   - [算法](/repository/Theories/Algorithms/README.md#算法)
-    
-  ---
 
-  - [领域驱动](/repository/Theories/DomainDrivenDesign/README.md#领域驱动)
-    
   ---
 
   - [函数式编程](/repository/Theories/FunctionalProgramming/README.md#函数式编程)
@@ -441,10 +433,6 @@
         - [备忘录模式-Memento](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/Memento/README.md#备忘录模式-memento)
         - [模板方法模式-Template Method](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/TemplateMethod/README.md#模板方法模式-templatemethod)
         - [解释器模式-Interpreter](/repository/Theories/ObjectOrientedProgramming/DesignPattern/BehavioralPatterns/Interpreter/README.md#解释器模式-interpreter)
-    
-  ---
-
-  - [操作系统](/repository/Theories/OperatingSystem/README.md#操作系统)
 
 ---
 
