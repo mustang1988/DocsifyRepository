@@ -68,19 +68,11 @@
 
 ---
 
-- [ReactJS](/repository/Libraries/React/README.md#reactjs)
-
----
-
 - [ReactiveX](/repository/Libraries/ReactiveX/README.md#reactivex)
 
 ---
 
 - [Apache Thrift](/repository/Libraries/Thrift/README.md#thrift)
-
----
-
-- [VueJS](/repository/Libraries/Vue/README.md#vuejs)
 
 ---
 

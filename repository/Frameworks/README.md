@@ -18,11 +18,3 @@
 ---
 
 - [Spring](/repository/Frameworks/Spring/README.md#spring)
-
----
-
-- [PyTorch](/repository/Frameworks/PyTorch/README.md#pytorch)
-
----
-
-- [TensorFlow](/repository/Frameworks/TensorFlow/README.md#tensorflow)
