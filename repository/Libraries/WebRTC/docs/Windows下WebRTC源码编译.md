@@ -89,8 +89,10 @@ gn gen out/Win64 --args="is_debug=false target_os=\"win\" target_cpu=\"x64\" is_
 ## 执行编译
 
 ```bash
-ninja -C [前一步指定的**构建目录**]
+ninja -C <path>
 ```
+
+参数path为, 前一步指定的**构建目录**
 
 编译耗时大约5~10分钟
 
