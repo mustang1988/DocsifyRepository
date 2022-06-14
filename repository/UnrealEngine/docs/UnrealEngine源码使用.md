@@ -19,9 +19,9 @@
 
 ## 环境准备
 
-具体环境准备可参考 [UE 官方说明文档](https://docs.unrealengine.com/4.27/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/) 的要求
-- DirectX Runtime, [下载地址](https://www.microsoft.com/en-us/download/details.aspx?id=8109)
-- Visual Studio 2017 或 2019, [下载地址](https://visualstudio.microsoft.com/zh-hans/vs/community/), 推荐使用2019或更高版本, 社区版即可, 企业版/专业版不是必须的
+具体环境准备可参考: [UE 官方说明文档](https://docs.unrealengine.com/4.27/en-US/Basics/InstallingUnrealEngine/RecommendedSpecifications/) 的要求
+- DirectX Runtime: [下载地址](https://www.microsoft.com/en-us/download/details.aspx?id=8109)
+- Visual Studio 2017 或 2019: [下载地址](https://visualstudio.microsoft.com/zh-hans/vs/community/), 推荐使用2019或更高版本, 社区版即可, 企业版/专业版不是必须的
   - Visual Studio 建议安装以下组件
     - .NET 桌面开发
     - 通用Windows平台开发
@@ -35,9 +35,9 @@
 
 该先决条件安装器是使用UE源码编译获得的, 其源码位于 *Engine\Source\Programs\PrereqInstaller* 目录中, 有能力的用户可以自行修改
 
-## 依赖处理
+## 依赖处理与预编译库的下载
 
-执行源码目录中的 *Setup.bat* 脚本文件, 其会自动检查和处理所需的依赖组件, 下载一些UE第三方库的预编译结果, 此步骤会比较耗时需要耐心等待
+执行源码目录中的 *Setup.bat* 脚本文件, 其会自动检查和处理所需的依赖, 下载Epic提供的预编译好的第三方组件的库, 此步骤会比较耗时需要耐心等待
 
 ?> 期间会下载10~15GB左右的文件
 

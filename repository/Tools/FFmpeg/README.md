@@ -4,7 +4,7 @@
 
 [![FFmpeg](./images/title.jpg)](https://ffmpeg.org)
 
-- [Windows下编译支持NVENC编码器的FFmpeg](/repository/Tools/FFmpeg/docs/Windows下编译支持NVENC编码器的FFmpeg.md#windows下编译支持nvenc编码器的ffmpeg)
+- [Windows下编译带NVENC编解码支持的FFmpeg](/repository/Tools/FFmpeg/docs/Windows下编译带NVENC编解码支持的FFmpeg.md#windows下编译支持nvenc编码器的ffmpeg)
 
 ---
 

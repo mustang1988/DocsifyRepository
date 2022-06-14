@@ -8,7 +8,7 @@
 ---
 
 - [FFmpeg](/repository/Tools/FFmpeg/README.md#ffmpeg)
-  - [Windows下编译支持NVENC编码器的FFmpeg](/repository/Tools/FFmpeg/docs/Windows下编译支持NVENC编码器的FFmpeg.md#windows下编译支持nvenc编码器的ffmpeg)
+  - [Windows下编译带NVENC编解码支持的FFmpeg](/repository/Tools/FFmpeg/docs/Windows下编译带NVENC编解码支持的FFmpeg.md#windows下编译支持nvenc编码器的ffmpeg)
   - [FFmpeg命令常用参数](/repository/Tools/FFmpeg/docs/FFmpeg命令常用参数.md#FFmpeg命令常用参数)
     - [通用参数](/repository/Tools/FFmpeg/docs/Common/README.md#通用参数)
       - [-i](/repository/Tools/FFmpeg/docs/Common/-i.md#i)
@@ -124,9 +124,9 @@
 ---
 
 - [VSCode](/repository/Tools/VSCode/README.md#vscode)
-  - [在VSCode中单步调试TypeScript](/repository/Tools/VSCode/在VSCode中单步调试TypeScript.md#在vscode中单步调试typescript)
+  - [在VSCode中单步调试TypeScript和JavaScript](/repository/Tools/VSCode/在VSCode中单步调试TypeScript和JavaScript.md#在vscode中单步调试typescript)
   - [VSCode插件](/repository/Tools/VSCode/docs/Plugins/README.md#vscode-插件)
-    - [ProjectManager](/repository/Tools/VSCode/docs/Plugins/ProjectManager.md#projectmanager)
+    - [Project Manager](/repository/Tools/VSCode/docs/Plugins/ProjectManager.md#projectmanager)
 
 ---
 

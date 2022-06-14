@@ -2,4 +2,4 @@
 
 ---
 
-- [ProjectManager](/repository/Tools/VSCode/docs/Plugins/ProjectManager.md#projectmanager)
+- [Project Manager](/repository/Tools/VSCode/docs/Plugins/ProjectManager.md#projectmanager)

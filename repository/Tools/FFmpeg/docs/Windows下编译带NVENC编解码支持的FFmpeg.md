@@ -1,4 +1,4 @@
-# Windows下编译支持NVENC编码器的FFmpeg
+# Windows下编译带NVENC编解码支持的FFmpeg
 
 ---
 

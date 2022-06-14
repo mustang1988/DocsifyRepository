@@ -54,7 +54,21 @@ options为可选参数, 按需添加
 └── index.html
 ```
 
-其中*README.md*为Docsify的首页内容markdown文件, *index.html* 为Docsify的入口页面
+如果使用本地化参数--local初始化目录, 则初始化完成后当前目录的文件结构如下
+```bash
+.
+├── README.md
+├── index.html
+└── vendor
+    ├── docsify.js
+    └── themes
+        └── vue.css
+```
+
+其中
+- *README.md*为Docsify的首页内容markdown文件
+- *index.html* 为Docsify的入口页面
+- *vendor* 目录下为页面需要加载的js和css文件
 
 ## 启动Docsify服务
 
@@ -64,7 +78,7 @@ options为可选参数, 按需添加
 docsify serve
 ```
 
-默认服务监听本地3000端口
+默认服务监听本地3000端口, 若本地3000端口已被占用, 则会自动切换到其他随机端口
 
 ![docsify serve](../images/docsify_serve.PNG)
 

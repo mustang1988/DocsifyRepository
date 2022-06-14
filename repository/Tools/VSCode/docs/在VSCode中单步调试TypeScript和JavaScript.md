@@ -1,4 +1,4 @@
-# 在VSCode中单步调试TypeScript
+# 在VSCode中单步调试TypeScript和JavaScript
 
 ---
 
