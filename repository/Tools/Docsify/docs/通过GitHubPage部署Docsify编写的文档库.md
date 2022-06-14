@@ -10,7 +10,7 @@
 
   ![创建GitHub库1](../images/通过GitHubPage部署Docsify编写的文档库_1.png)
 
-3. 填写仓库名称和描述信息, 注意**不要**勾选 "Add a README file" 前的Checkbox
+3. 填写仓库名称和描述信息, 建议**不**勾选 "Add a README file" 前的Checkbox, 后面初始化的时候会自动创建README.md文件
 
   ![创建GitHub库2](../images/通过GitHubPage部署Docsify编写的文档库_2.png)
 
