@@ -164,6 +164,8 @@
       - [SessionDescriptionInterface](/repository/Libraries/WebRTC/docs/源码分析/SessionDescriptionInterface.md#RTCSessionDescription-源码分析)
       - [SetSessionDescriptionObserver](/repository/Libraries/WebRTC/docs/源码分析/SetSessionDescriptionObserver.md#SetSessionDescriptionObserver-源码分析)
       - [IceCandidateInterface](/repository/Libraries/WebRTC/docs/源码分析/IceCandidateInterface.md#IceCandidateInterface-源码分析)
+  - [Sequelize](/repository/Libraries/Sequelize/README.md#sequelize)
+    - [TypeScript下Model的定义](/repository/Libraries/Sequelize/docs/TypeScript下Model的定义.md#typescript下model的定义)
 
 <!-- - [中间件](/repository/Middlewares/README.md#中间件)
   - [ElasticSearch](/repository/Middlewares/ElasticSearch/README.md#elasticsearch)

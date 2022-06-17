@@ -197,7 +197,8 @@
     - [Mocha生成单元测试覆盖率报告](/repository/Libraries/Mocha/docs/Mocha生成单元测试覆盖率报告.md#mocha生成单元测试覆盖率报告)
     - [Mocha对TypeScript执行单元测试](/repository/Libraries/Mocha/docs/Mocha对TypeScript执行单元测试.md#mocha对typescript执行单元测试)
     
-  ---
+  - [Sequelize](/repository/Libraries/Sequelize/README.md#sequelize)
+    - [TypeScript下Model的定义](/repository/Libraries/Sequelize/docs/TypeScript下Model的定义.md#typescript下model的定义)
 
   - [Apache Thrift](/repository/Libraries/Thrift/README.md#thrift)
     
