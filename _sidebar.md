@@ -137,7 +137,7 @@
         - [cloneDeep](/repository/Libraries/Lodash/docs/cloneDeep.md#cloneDeep)
       - [String相关函数](/repository/Libraries/Lodash/docs/String.md#string相关函数)
         - [camelCase](/repository/Libraries/Lodash/docs/camelCase.md#camelcase)
-        - [camelCase](/repository/Libraries/Lodash/docs/capitalize.md#capitalize)
+        - [capitalize](/repository/Libraries/Lodash/docs/capitalize.md#capitalize)
       - [Object相关函数](/repository/Libraries/Lodash/docs/Object.md#Object相关函数)
         - [pick](/repository/Libraries/Lodash/docs/pick.md#pick)
         - [get](/repository/Libraries/Lodash/docs/get.md#get)
