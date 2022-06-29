@@ -6,21 +6,21 @@
 
 ---
 
-- [Java](/repository/Languages/Java/README.md#java)
+[![Java](./Java/images/title.jpg ":size=200")](/repository/Languages/Java/README.md#java)
 
 ---
 
-- [JavaScript](/repository/Languages/JavaScript/README.md#javascript)
+[![JavaScript](./JavaScript/images/title.jpg ":size=200")](/repository/Languages/JavaScript/README.md#javascript)
 
 ---
 
-- [PHP](/repository/Languages/PHP/README.md#php)
+[![PHP](./PHP/images/title.png ":size=200")](/repository/Languages/PHP/README.md#php)
 
 ---
 
-- [Python](/repository/Languages/Python/README.md#python)
+[![Python](./Python/images/title.jpg ":size=200")](/repository/Languages/Python/README.md#python)
   - [logging模块配置示例](/repository/Languages/Python/docs/logging模块配置示例.md#logging模块配置示例)
 
 ---
 
-- [TypeScript](/repository/Languages/TypeScript/README.md#typescript)
+[![TypeScript](./TypeScript/images/title.png ":size=200")](/repository/Languages/TypeScript/README.md#typescript)
