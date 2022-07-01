@@ -203,8 +203,6 @@
 
   - [Prisma](/repository/Libraries/Prisma/README.md#prisma)
     - [Prisma使用入门](/repository/Libraries/Prisma/docs/Prisma使用入门.md#Prisma使用入门.md#Prisma使用入门.md)
-
-  - [Apache Thrift](/repository/Libraries/Thrift/README.md#thrift)
     
   ---
 

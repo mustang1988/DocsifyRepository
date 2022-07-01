@@ -2,6 +2,6 @@
 
 ---
 
-![RDBMS](./images/title.png)
+<!-- ![RDBMS](./images/title.png) -->
 
-- [MySQL](/repository/Databases/RDBMS/MySQL/README.md#MySQL)
+[![MySQL](./MySQL/images/title.jpg ":size=200")](/repository/Databases/RDBMS/MySQL/README.md#MySQL)

@@ -64,10 +64,6 @@
 
 ---
 
-[![Apache Thrift](./Thrift/images/title.png ":size=200")](/repository/Libraries/Thrift/README.md#thrift)
-
----
-
 [![Mongoose](./Mocha/images/title.png ":size=200")](/repository/Libraries/Mongoose/README.md#mongoose)
   - [存储Object类型数据时设置默认值{}无效的问题](/repository/Libraries/Mongoose/docs/存储Object类型数据时设置默认值{}无效的问题.md#存储object类型数据时设置默认值无效的问题)
 
