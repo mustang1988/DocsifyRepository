@@ -11,6 +11,7 @@
   ---
 
   - [JavaScript](/repository/Languages/JavaScript/README.md#javascript)
+    - [ChildProcess模块](/repository/Languages/JavaScript/docs/ChildProcess.md#childprocess模块)
     
   ---
 
@@ -199,6 +200,9 @@
     
   - [Sequelize](/repository/Libraries/Sequelize/README.md#sequelize)
     - [TypeScript下Model的定义](/repository/Libraries/Sequelize/docs/TypeScript下Model的定义.md#typescript下model的定义)
+
+  - [Prisma](/repository/Libraries/Prisma/README.md#prisma)
+    - [Prisma使用入门](/repository/Libraries/Prisma/docs/Prisma使用入门.md#Prisma使用入门.md#Prisma使用入门.md)
 
   - [Apache Thrift](/repository/Libraries/Thrift/README.md#thrift)
     

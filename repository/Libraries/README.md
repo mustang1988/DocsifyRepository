@@ -86,3 +86,8 @@
 
 [![Sequelize](./Sequelize/images/title.png ":size=200")](/repository/Libraries/Sequelize/README.md#sequelize)
   - [TypeScript下Model的定义](/repository/Libraries/Sequelize/docs/TypeScript下Model的定义.md#typescript下model的定义)
+
+---
+
+[![Prisma](./Prisma/images/title.png ":size=200")](/repository/Libraries/Prisma/README.md#prisma)
+  - [Prisma入门](/repository/Libraries/Prisma/docs/Prisma使用入门.md#Prisma使用入门.md)
