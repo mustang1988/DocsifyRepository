@@ -99,7 +99,7 @@ ChildProcess对象
 ```javascript
 // main.js 主进程脚本
 const {fork} = require('child_process');
-const sub_module = require('./sub_process');
+const sub_module = './sub_process.js'
 const sub_process = fork(sub_module);
 // 主进程通过IPC通道发送消息给子进程
 sub_process.send({data:'data to sub module'});
