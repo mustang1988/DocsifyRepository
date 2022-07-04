@@ -34,11 +34,10 @@ ChildProcess对象
 ### 使用示例
 
 ```javascript
-// 使用 exec(command[, options][, callback]) 执行"ls -al /"命令
 const { exec } = require('child_process');
-const command = ['ls', '-al', '/'];
-exec(command.join(' '), { encoding: 'utf8' }, (error, stdout, stderr) => {
-  console.log({ error, stdout: stdout.toString(), stderr: stderr.toString() });
+const command = ['ls', '-al', '/'].join(' ');
+exec(command, (error, stdout, stderr) => {
+  console.log('Child Process exec(): ', { error, stdout: stdout.toString(), stderr: stderr.toString() });
 });
 ```
 
@@ -69,7 +68,11 @@ ChildProcess对象
 
 ```javascript
 const {execFile} = require('child_process');
-// *TODO内容待补充*
+const file = 'ffprobe';
+const args = ['-v', '0', '-of', 'json', '-show_streams', '-i', 'test.mp4'];
+execFile(file, args, (error, stdout, stderr) => {
+  console.log('Child Process execFile(): ', {error, stdout, stderr});
+});
 ```
 
 ---
@@ -94,8 +97,24 @@ ChildProcess对象
 ### 使用示例
 
 ```javascript
+// main.js 主进程脚本
 const {fork} = require('child_process');
-// *TODO内容待补充*
+const sub_module = require('./sub_process');
+const sub_process = fork(sub_module);
+// 主进程通过IPC通道发送消息给子进程
+sub_process.send({data:'data to sub module'});
+// 主进程接收子进程通过IPC通道发送的消息
+sub_process.on('message', (msg_from_sub_module) => {
+  console.log('Message From sub module: ', msg_from_sub_module);// {data:'data to parent'}
+})
+
+// sub_process.js 子进程脚本
+// 子进程接收主进程通过IPC通道发送的消息
+process.on('message', (msg_from_parent_process) => {
+  console.log('Message From parent process: ', msg_from_parent_process);// {data:'data to sub module'}
+  // 子进程通过IPC通道发送消息给主进程
+  process.send && process.send({data:'data to parent'});
+});
 ```
 
 ---
@@ -117,7 +136,12 @@ ChildProcess对象
 
 ```javascript
 const {spawn} = require('child_process');
-// *TODO内容待补充*
+const command = 'ffprobe';
+const args = ['-v', '0', '-of', 'json', '-show_streams', '-i', 'test.mp4']
+const child_p = spawn(command, args);
+child_p.on('close', (code, signal) => {
+  console.log('Spawn on close: ', { code, signal });
+});
 ```
 
 ---
@@ -138,7 +162,9 @@ Buffer|string, 命令执行时的stdout
 
 ```javascript
 const {execSync} = require('child_process');
-// *TODO内容待补充*
+const command = ['ffprobe','-v', '0', '-of', 'json', '-show_streams', '-i', 'test.mp4'].join(' ');
+const buffer = execSync(command);
+console.log(buffer.toString());
 ```
 
 ---
@@ -160,7 +186,10 @@ Buffer|string, 命令执行时的stdout
 
 ```javascript
 const {execFileSync} = require('child_process');
-// *TODO内容待补充*
+const file = 'ffprobe';
+const args = ['-v', '0', '-of', 'json', '-show_streams', '-i', 'test.mp4'];
+const buffer = execFileSync(file, args);
+console.log(buffer.toString());
 ```
 
 ---
@@ -190,7 +219,11 @@ Object, 包含以下属性:
 
 ```javascript
 const {spawnSync} = require('child_process');
-// *TODO内容待补充*
+const file = 'ffprobe';
+const args = ['-v', '0', '-of', 'json', '-show_streams', '-i', 'test.mp4'];
+const result = spawnSync(file, args);
+const {pid, output, stdout, stderr, status, signal, error} = result;
+console.log(result);
 ```
 
 ## 关于可选参数option
