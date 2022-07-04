@@ -4,6 +4,8 @@
 
 ## close
 
+### 事件触发条件
+
 当进程结束**且**子进程的stdio流被关闭后触发
 
 ### 回调函数
@@ -28,6 +30,8 @@ child_p.on('close', (code, signal) => {
 
 ## disconnect
 
+### 事件触发条件
+
 当在主进程中调用子进程对象的disconnect()函数或在子进程中调用主进程对象的disconnect()函数时触发
 
 当触发该事件后, 子进程和主进程将不再允许使用 [send()](/repository/Languages/JavaScript/docs/ChildProcessAPI.md#subprocesssendmessage-sendhandle-options-callback) 函数进行进程间通信, 此时子进程的 [connected](/repository/Languages/JavaScript/docs/ChildProcessAPI.md#subprocessconnected) 属性将被设置为false
@@ -48,6 +52,8 @@ child_p.on('disconnect', () => {
 ```
 
 ## error
+
+### 事件触发条件
 
 发生以下情况之一时, 触发该事件
 
@@ -73,6 +79,8 @@ child_p.on('error', (error) => {
 ```
 
 ## exit
+
+### 事件触发条件
 
 子进程结束(正常结束/异常结束)时触发
 
@@ -100,6 +108,8 @@ child_p.on('exit', (code, signal) => {
 
 ## message
 
+### 事件触发条件
+
 主进程或子进程通过 [send()](/repository/Languages/JavaScript/docs/ChildProcessAPI.md#subprocesssendmessage-sendhandle-options-callback) 函数发送进程间通信消息时触发
 
 ### 回调函数
@@ -124,6 +134,8 @@ child_p.on('message', (message, handle) => {
 
 ## spawn
 
+### 事件触发条件
+
 子进程派生成功时触发**一次**, 如果子进程派生失败, spawn事件是不会触发的, 取而代之, 一个[error](#error)事件会被触发
 
 spawn事件总是会在其他可触发事件前最先触发
@@ -147,7 +159,11 @@ child_p.on('spawn', () => {
 
 ## stdio.data
 
-此为子进程stdio的事件, stdin, stdout, stderr 均支持, 当流释放数据片段所有权时触发
+此为子进程stdio的事件, stdin, stdout, stderr 均支持
+
+### 事件触发条件
+
+当流释放数据片段所有权时触发
 
 ### 回调函数
 
@@ -169,7 +185,11 @@ child_p.stdout.on('data', (chunk) => {
 
 ## stdio.close
 
-此为子进程stdio事件, stdin, stdout, stderr 均支持, 当流关闭时触发
+此为子进程stdio事件, stdin, stdout, stderr 均支持
+
+### 事件触发条件
+
+当流关闭时触发
 
 ### 回调函数
 
@@ -189,7 +209,11 @@ child_p.stdout.on('close', () => {
 
 ## stdio.end
 
-此为子进程stdio事件, stdin, stdout, stderr 均支持, 当流关中没有可消费数据时触发
+此为子进程stdio事件, stdin, stdout, stderr 均支持
+
+### 事件触发条件
+
+当流关中没有可消费数据时触发
 
 ### 回调函数
 
@@ -209,7 +233,14 @@ child_p.stdout.on('end', () => {
 
 ## stdio.error
 
-此为子进程stdio事件, stdin, stdout, stderr 均支持, 当底层流由于内部异常/故障无法生成数据时或当流推入无效数据块时触发
+此为子进程stdio事件, stdin, stdout, stderr 均支持
+
+### 事件触发条件
+
+满足以下条件之一时触发
+
+- 底层流由于内部异常/故障无法生成数据
+- 流送入了无效数据块
 
 ### 回调函数
 
