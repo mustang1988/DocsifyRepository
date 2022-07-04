@@ -104,8 +104,6 @@ const {fork} = require('child_process');
 
 使用指定的command命令和args参数, 创建子进程, 如果未指定args, 其值默认为空数组
 
-!> 如果在spawn()中通过可选参数启用了shell, 那么输入的参数需要注意进行检查, 否则可能存在被注入恶意shell脚本攻击
-
 ### 参数说明
 - command, 需要执行的命令
 - args, 可选参数, 提交给命令的参数
@@ -199,7 +197,7 @@ const {spawnSync} = require('child_process');
 
 ChildProcess模块提供API函数中均有一个可选参数option, 其作用是定义一些可选命令选项, 可选项如下:
 
-!> 注意: 以下可选参数并不是ChildProcess提供的**所有**API函数均支持, 部分参数仅在某几个API函数中可用
+!> 注意: 以下可选参数**并不是**ChildProcess提供的**所有**API函数均支持, 部分参数仅在某几个API函数中可用
 
 - cwd, 子进程工作目录, 默认值: 主进程的 process.cwd()
 
@@ -207,7 +205,13 @@ ChildProcess模块提供API函数中均有一个可选参数option, 其作用是
 
 - encoding, 子进程命令的字符集, 默认值: utf8
 
-- shell, 执行命令的Shell, 在Unix系统下默认值: /bin/sh, Windows系统下默认值: process.env.ComSpec
+- shell
+  
+  - 设置执行命令的Shell, 在Unix系统下默认值: /bin/sh, Windows系统下默认值: process.env.ComSpec
+  
+  - 在部分ChildProcess的API函数中, 该参数为boolean值, 用于设置是否创建Shell来执行命令, 默认值: false
+  
+  !> 注意: 如果设置为true, 则对于输入的参数需要进行检查, 否则可能存在被注入恶意shell脚本攻击的风险
 
 - signal, 允许使用的命令中断信号值
 
@@ -246,6 +250,10 @@ ChildProcess模块提供API函数中均有一个可选参数option, 其作用是
   - ignore
   - inherit
   - Stream对象
+
+- serialization, 用于设置进程间通信消息的序列化方式, 默认值: json, 可选值: json, advanced
+
+  设置为advanced时, 会使用v8引擎的序列化API对消息进行序列化, 该序列化模块支持更多的JavaScript内置类型的序列化, 比如 RegExp 对象, 但因为该格式并不是JSON的超集, 所以会存在序列化后不兼容属性的丢失或格式变化, 从而导致在接收端接收消息并反序列化后无法读取指定属性的问题.
 
 ## 关于子进程ChildProcess
 

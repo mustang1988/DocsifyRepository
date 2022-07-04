@@ -2,6 +2,8 @@
   - [Java](/repository/Languages/Java/README.md#java)
   - [JavaScript](/repository/Languages/JavaScript/README.md#javascript)
     - [ChildProcess模块](/repository/Languages/JavaScript/docs/ChildProcess.md#childprocess模块)
+      - [ChildProcess事件](/repository/Languages/JavaScript/docs/ChildProcessEvents.md#childprocess事件)
+      - [ChildProcess对象API](/repository/Languages/JavaScript/docs/ChildProcessAPI.md#childprocess对象api)
   - [PHP](/repository/Languages/PHP/README.md#php)
   - [Python](/repository/Languages/Python/README.md#python)
     - [logging模块配置示例](/repository/Languages/Python/docs/logging模块配置示例.md#logging模块配置示例)
