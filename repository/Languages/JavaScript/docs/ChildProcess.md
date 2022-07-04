@@ -17,11 +17,11 @@ ChildProcess模块提供了以下API用来创建子进程
 
 ## exec(command[, options][, callback])
 
-开启一个Shell子进程, 然后在该Shell中执行命令, 传递给exec函数的命令字符串由shell直接处理
+开启一个Shell子进程, 然后在该Shell中执行命令, 传递给exec函数的命令字符串由Shell直接处理
 
 ### 参数说明
 - command, 需要执行的命令, 命令参数与命令之间用空格隔开
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 - callback, 可选参数, 执行结束后的回调函数, 回调函数参数列表如下:
   - error, 命令执行时发生的异常
   - stdout, 命令执行时的标准输出
@@ -46,12 +46,16 @@ exec(command.join(' '), { encoding: 'utf8' }, (error, stdout, stderr) => {
 
 ## execFile(file[, args][, options][, callback])
 
-execFile()函数与exec()类似, 区别在于, 它在默认情况下不会生成Shell, 而是将指定的可执行文件直接作为一个新进程生成, 这使得它比exec()略高效, 支持与exec()相同的选项, 由于不生成Shell, 因此不支持I/O重定向和文件通配符等行为
+execFile()函数与 [exec()](#execcommand-options-callback) 类似, 区别在于
+
+execFile() 默认情况下**不会**生成Shell, 而是将指定的可执行文件直接作为一个新进程生成, 这使得它比 [exec()](#execcommand-options-callback) 略高效
+
+execFile() 由于不生成Shell, 因此不支持I/O重定向和文件通配符等行为
 
 ### 参数说明
 - file, 需要执行的文件
 - args, 可选参数, 提交给file文件的执行参数
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 - callback, 可选参数, 执行结束后的回调函数, 回调函数参数列表如下:
   - error, 命令执行时发生的异常
   - stdout, 命令执行时的标准输出
@@ -72,12 +76,16 @@ const {execFile} = require('child_process');
 
 ## fork(modulePath[, args][, options])
 
-fork() 函数是spawn()函数的一个特例, 和 spawn() 函数一样, 生成新的Node.js进程并返回一个ChildProcess对象, 特殊之处在于返回的子进程将有一个额外的内置通信通道, 子进程允许通过该通信通道, 向父进程发送消息从而实现进程之间通信
+fork() 函数是 [spawn()](#spawncommand-args-options) 函数的一个特例
+
+和 [spawn()](spawncommand-args-options) 函数一样, 生成新的Node.js进程并返回一个ChildProcess对象
+
+特殊之处在于返回的子进程将有一个额外的内置通信通道, 子进程允许通过该通信通道, 向父进程发送消息从而实现进程之间通信
 
 ### 参数说明
 - modulePath, 子进程需要执行的js模块
 - args, 可选参数, 子进程启动时接收的参数列表
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 
 ### 返回值
 
@@ -96,12 +104,12 @@ const {fork} = require('child_process');
 
 使用指定的command命令和args参数, 创建子进程, 如果未指定args, 其值默认为空数组
 
-!> 如果在spawn中通过可选参数启用了shell, 那么输入的参数需要注意进行检查, 否则可能存在被注入恶意shell脚本攻击
+!> 如果在spawn()中通过可选参数启用了shell, 那么输入的参数需要注意进行检查, 否则可能存在被注入恶意shell脚本攻击
 
 ### 参数说明
 - command, 需要执行的命令
 - args, 可选参数, 提交给命令的参数
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 
 ### 返回值
 
@@ -118,11 +126,11 @@ const {spawn} = require('child_process');
 
 ## execSync(command[, options])
 
-execSync() 函数是 [exec()](/repository/Languages/JavaScript/docs/ChildProcess.md#execcommand-options-callback) 函数的同步版本, 执行时会阻塞进程, 直到命令执行结束(不论进程是正常/非正常退出), 若执行时长超过可选参数中设定的超时时长, 则会中断执行.
+execSync() 函数是 [exec()](execcommand-options-callback) 函数的同步版本, 执行时会阻塞进程, 直到命令执行结束(不论进程是正常/非正常退出), 若执行时长超过可选参数中设定的超时时长, 则会中断执行
 
 ### 参数说明
 - command, 需要执行的命令
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 
 ### 返回值
 
@@ -139,12 +147,12 @@ const {execSync} = require('child_process');
 
 ## execFileSync(file[, args][, options])
 
-execFileSync() 函数是 [execFile()](/repository/Languages/JavaScript/docs/ChildProcess.md#execfilefile-args-options-callback) 函数的同步版本, 执行时会阻塞进程, 直到命令执行结束(不论进程是正常/非正常退出), 若执行时长超过可选参数中设定的超时时长, 则会中断执行.
+execFileSync() 函数是 [execFile()](#execfilefile-args-options-callback) 函数的同步版本, 执行时会阻塞进程, 直到命令执行结束(不论进程是正常/非正常退出), 若执行时长超过可选参数中设定的超时时长, 则会中断执行.
 
 ### 参数说明
 - file, 需要执行的文件
 - args, 可选参数, 提交给file文件的执行参数
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 
 ### 返回值
 
@@ -161,12 +169,12 @@ const {execFileSync} = require('child_process');
 
 ## spawnSync(command[, args][, options])
 
-spawnSync() 函数是 [spawn()](/repository/Languages/JavaScript/docs/ChildProcess.md#spawncommand-args-options) 函数的同步版本, 执行时会阻塞进程, 直到命令执行结束(不论进程是正常/非正常退出), 若执行时长超过可选参数中设定的超时时长, 则会中断执行.
+spawnSync() 函数是 [spawn()](#spawncommand-args-options) 函数的同步版本, 执行时会阻塞进程, 直到命令执行结束(不论进程是正常/非正常退出), 若执行时长超过可选参数中设定的超时时长, 则会中断执行.
 
 ### 参数说明
 - command, 需要执行的命令
 - args, 可选参数, 提交给命令的参数
-- options, 可选参数, *TODO内容待补充*
+- options, 可选参数, 参考:[可选参数option](#关于可选参数option)
 
 ### 返回值
 
@@ -186,3 +194,60 @@ Object, 包含以下属性:
 const {spawnSync} = require('child_process');
 // *TODO内容待补充*
 ```
+
+## 关于可选参数option
+
+ChildProcess模块提供API函数中均有一个可选参数option, 其作用是定义一些可选命令选项, 可选项如下:
+
+!> 注意: 以下可选参数并不是ChildProcess提供的**所有**API函数均支持, 部分参数仅在某几个API函数中可用
+
+- cwd, 子进程工作目录, 默认值: 主进程的 process.cwd()
+
+- env, 子进程的环境变量配置, 默认值: 主进程的 process.env
+
+- encoding, 子进程命令的字符集, 默认值: utf8
+
+- shell, 执行命令的Shell, 在Unix系统下默认值: /bin/sh, Windows系统下默认值: process.env.ComSpec
+
+- signal, 允许使用的命令中断信号值
+
+- timout, 命令执行的超时时长, 默认值: 0
+
+- maxBuffer, 命令执行时stderr和stdout允许的最大字节数, 默认值: 1024*1024
+
+- killSignal, 子进程kill信号, 默认值: SIGTERM
+
+- uid, 子进程执行的用户唯一标识
+
+- gid, 子进程执行的用户组唯一标识
+
+- windowsHide, 隐藏子进程执行的命令窗口, 通常在Windows系统下会在子进程执行时被操作系统创建, 默认值: false
+
+- windowsVerbatimArguments, 在Windows上不需要引用或转义参数, 在Unix系统下忽略此设置, 默认值: false
+
+  在 [spawn()](#spawncommand-args), [spawnSync()](#spawnsynccommand-args), [execFile()](#execfilefile-args-callback), [fork()](#forkmodulepath-args) 函数中支持此参数
+
+- detached, 允许子进程独立于主进程运行, 默认值: false
+
+  在Windows上, 将options.detached设置为true可以使子进程在父进程退出后继续运行, 子进程将拥有自己的控制台窗口, 一旦为子进程启用, 它就不能被禁用
+  
+  在非windows平台上, 如果options.detached被设置为true, 子进程将成为一个新进程组和会话的领导者, 子进程可以在父进程退出后继续运行, 无论它们是否分离
+
+  默认情况下, 父进程将等待分离的子进程退出, 要防止父进程等待给定的子进程退出, 请使用subprocess.unref()方法, 这样做将导致父进程的事件循环的引用计数中不包含子进程, 允许父进程独立于子进程退出, 除非子进程和父进程之间建立了IPC通道
+  
+  当使用detached选项启动一个长时间运行的进程时, 进程将不会在父进程退出后继续在后台运行, 除非它提供了一个没有连接到父进程的stdio配置, 如果继承了父级的stdio, 子级将继续连接到控制终端
+
+- stdio, 用于设置子进程于主进程见通信的管道, 默认情况下, 子进程的stdin, stdout和stderr被重定向到相应的子进程ChildProcess对象的 subprocess.stdin, subprocess.stdout和subprocess.stderr中, 此时stdio属性的配置值相当于['pipe', 'pipe', 'pipe']即默认值
+
+  其他可选值:
+
+  - overlapped
+  - ipc
+  - ignore
+  - inherit
+  - Stream对象
+
+## 关于子进程ChildProcess
+
+- [ChildProcess事件](/repository/Languages/JavaScript/docs/ChildProcessEvents.md#childprocess事件)
+- [ChildProcess对象API](/repository/Languages/JavaScript/docs/ChildProcessAPI.md#childprocess对象api)
