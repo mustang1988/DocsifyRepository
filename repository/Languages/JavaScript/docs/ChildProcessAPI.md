@@ -44,13 +44,13 @@ console.log(child_exec.channel);// undefined
 const child_fork = fork('./sub_module.js');
 console.log(child_fork.channel);
 /**
- * Control {
+Control {
     _events: [Object: null prototype] {},
     _eventsCount: 0,
     _maxListeners: undefined,
     [Symbol(kCapture)]: false,
     [Symbol(kPendingMessages)]: []
-    }
+}
  */
 
 ```
