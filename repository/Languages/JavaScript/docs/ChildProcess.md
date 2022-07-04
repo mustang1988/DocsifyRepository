@@ -5,13 +5,13 @@
 NodeJS的ChildProcess模块提供了"多进程"的支持, 使得我们可以通过新开进程来处理计算密集或IO密集型的长耗时任务, 这样可以充分利用CPU的计算资源
 
 ChildProcess模块提供了以下API用来创建子进程
-- exec(command[, options][, callback])
-- execFile(file[, args][, options][, callback])
-- fork(modulePath[, args][, options])
-- spawn(command[, args][, options])
-- execSync(command[, options])
-- execFileSync(file[, args][, options])
-- spawnSync(command[, args][, options])
+- [exec(command[, options][, callback])](#execcommand-options-callback)
+- [execFile(file[, args][, options][, callback])](#execfilefile-args-options-callback)
+- [fork(modulePath[, args][, options])](#forkmodulepath-args-options)
+- [spawn(command[, args][, options])](#spawncommand-args-options)
+- [execSync(command[, options])](#execsynccommand-options)
+- [execFileSync(file[, args][, options])](#execfilesyncfile-args-options)
+- [spawnSync(command[, args][, options])](#spawnsynccommand-args-options)
 
 ---
 
