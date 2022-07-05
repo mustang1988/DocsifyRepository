@@ -62,6 +62,11 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+console.log(child_fork.connected); // true
+child_fork.disconnect();
+console.log(child_fork.connected); // false
 ```
 
 ### exitCode
@@ -71,6 +76,11 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+child_exec.on('close', (code, signal) => {
+  console.log(child_exec.exitCode); // 0
+});
 ```
 
 ### killed
@@ -80,6 +90,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.killed); // false
 ```
 
 ### pid
@@ -89,6 +102,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.pid);
 ```
 
 ### signalCode
@@ -98,6 +114,12 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+child_exec.kill('SIGTERM');
+child_exec.on('close', (code, signal) => {
+  console.log(child_exec.signalCode); // 'SIGTERM'
+});
 ```
 
 ### spawnargs
@@ -107,6 +129,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.spawnargs); // [ 'C:\Windows\system32\cmd.exe', '/d', '/s', '/c', '"dir C:\"' ]
 ```
 
 ### spawnfile
@@ -120,6 +145,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.spawnfile); // 'C:\Windows\system32\cmd.exe'
 ```
 
 ### stderr
@@ -129,6 +157,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.stderr); // Socket {...}
 ```
 
 ### stdin
@@ -138,6 +169,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.stdin); // Socket {...}
 ```
 
 ### stdio
@@ -151,6 +185,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.stdio); // [Socket {...},Socket {...},Socket {...}]
 ```
 
 ### stdout
@@ -160,6 +197,9 @@ Control {
 #### 示例
 
 ```javascript
+const { exec } = require('child_process');
+const child_exec = exec('dir C:\\');
+console.log(child_exec.stdout); // Socket {...}
 ```
 
 ## 方法
@@ -171,6 +211,9 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+child_fork.channel.ref();
 ```
 
 ### channel.unref()
@@ -180,13 +223,16 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+child_fork.channel.unref();
 ```
 
 ### kill([signal])
 
 #### 参数
 
-- signal, 子进程退出信号
+- signal: Node.Signal|String, 子进程退出信号
 
 此方法用于向子进程发送中断信号, 如果有指定可选参数signal, 则子线程会在 [close](/repository/Languages/JavaScript/docs/ChildProcessEvents.md#close) 事件的回调函数中得到该信号, 如果未指定signal参数, 则会在 [close](/repository/Languages/JavaScript/docs/ChildProcessEvents.md#close) 事件回调函数中返回, 子进程创建时指定的可选参数option中指定的信号或其默认值: SIGTERM
 
@@ -197,6 +243,9 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+console.log(child_fork.kill('SIGTERM')); // true
 ```
 
 ### disconnect()
@@ -206,6 +255,11 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+console.log(child_fork.connected); // true
+child_fork.disconnect();
+console.log(child_fork.connected); // false
 ```
 
 ### ref()
@@ -215,6 +269,9 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+child_fork.ref();
 ```
 
 ### send(message[, sendHandle[, options]][, callback])
@@ -223,11 +280,11 @@ Control {
 
 #### 参数
 
-- message, 进程间通信消息
-- sendHandle, 可选参数, net.Socket 对象或 net.Server 对象或undefined
-- options, 可选参数, 可选属性如下:
-    - keepOpen, boolean, handle 为 net.Socket 时生效, 值为true时, socket连接会保持open, 默认值: false
-- callback, 可选参数, 发送消息后的回调函数
+- message: Object|String, 进程间通信消息
+- sendHandle: Socket, 可选参数, net.Socket 对象或 net.Server 对象或undefined
+- options: Object, 可选参数, 可选属性如下:
+    - keepOpen: Boolean, handle 为 net.Socket 时生效, 值为true时, socket连接会保持open, 默认值: false
+- callback: Function, 可选参数, 发送消息后的回调函数
 
 #### 返回值
 
@@ -236,6 +293,9 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+console.log(child_fork.send({ str: 'hello world' })); // true
 ```
 
 ### unref()
@@ -245,4 +305,7 @@ Control {
 #### 示例
 
 ```javascript
+const { fork } = require('child_process');
+const child_fork = fork('dir', ['C:\\']);
+child_fork.unref();
 ```
