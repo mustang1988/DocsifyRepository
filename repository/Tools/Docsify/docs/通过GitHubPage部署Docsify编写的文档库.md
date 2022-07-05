@@ -15,6 +15,7 @@
   ![创建GitHub库2](../images/通过GitHubPage部署Docsify编写的文档库_2.png)
 
 4. 点击底部的"Create repository" 按钮完成仓库创建
+
 ## Git拉取库到本地
 
 仓库创建完成后, 会自动跳转到仓库首页, 复制仓库的git地址, 拉取仓库到本地

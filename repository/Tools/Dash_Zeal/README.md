@@ -58,7 +58,7 @@ Zeal可以访问Dash的默认文档仓库, 两者在文档库的格式上是完�
 
   点击最下方 "Docket storage" 中的 "Browser..." 按钮, 即可打开Zeal的docst存储目录
 
-  将迁移步骤下载得到的文件 *Sequelize.tgz* 解压到该目录下
+  将上一步骤下载得到的文件 *Sequelize.tgz* 解压到该目录下
 
   得到 "Sequelize.docset" 文件夹
 

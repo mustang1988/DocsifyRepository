@@ -26,23 +26,12 @@ docsify init [options]
 ```
 
 options为可选参数, 按需添加
-- --local, -l
 
-  是否本地化Docsify, 如果选择本地化, 则会将所有Docsify文件拷贝到当前目录, 否则只拷贝必要的文件, 所有页面需要的JS将会在访问时通过CND地址加载, 默认值: false
-
-- --theme, -t
-
-  选择初始化的Docsify主题, 可选值为:
-  - vue
-  - buble
-  - dark
-  - pure
-
-  默认值: vue
-
-- --plugins, -p
-
-  初始化时是否选择启用内置插件, 默认值: false, 添加此参数可以在初始化时选择启用内置插件
+|参数|作用|默认值|
+|:-|:-|:-|
+|--local, -l|是否本地化Docsify, 如果选择本地化, 则会将所有Docsify文件拷贝到当前目录, 否则只拷贝必要的文件, 所有页面需要的JS将会在访问时通过CND地址加载|false|
+|--theme, -t|选择初始化的Docsify主题, 可选值为包括: vue, buble, dark, pure|vue|
+|--plugins, -p|初始化时是否选择启用内置插件, 添加此参数可以在初始化时选择启用内置插件|false|
 
 ### 目录结构
 
@@ -65,10 +54,19 @@ options为可选参数, 按需添加
         └── vue.css
 ```
 
-其中
-- *README.md*为Docsify的首页内容markdown文件
-- *index.html* 为Docsify的入口页面
-- *vendor* 目录下为页面需要加载的js和css文件
+文件说明:
+
+- *README.md*
+
+  Docsify的首页内容markdown文件
+
+- *index.html*
+
+  Docsify的入口页面
+
+- *vendor*
+
+  目录下为页面需要加载的js和css文件
 
 ## 启动Docsify服务
 
@@ -92,4 +90,4 @@ docsify serve
 
 Docsify基本是开箱即用的, 完成上面的步骤就可以直接使用了, 配置大多是一些个性化而非功能性的
 
-[Docsify配置项](https://docsify.js.org/#/zh-cn/configuration)
+[Docsify完整配置项](https://docsify.js.org/#/zh-cn/configuration)
