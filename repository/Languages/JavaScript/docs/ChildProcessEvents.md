@@ -12,10 +12,12 @@
 
 close事件回调函数中包含以下2个参数:
 
-- code, 子进程的退出状态码
-- signal, 子进程终端信号
+- code: Number|null, 子进程的退出状态码
+- signal: Node.Signal|null, 子进程终端信号
 
 !> 注意: 需要区别 close 事件和[exit](#exit)事件, 当 [exit](#exit) 事件触发时, stdio流可能并未关闭, 此时并不会触发close事件, 只有stdio流关闭后才会触发close事件, 即 [exit](#exit) 和 close 事件的触发可能并不是同时的, 但 close 事件的触发总是会在 [exit](#exit) 事件触发之后
+
+?> 如果有需求需要在子进程运行结束后执行一些处理逻辑, 最好将这部分相关逻辑放到close事件的回调函数中, 不建议放到 [exit](#exit) 的事件回调中.
 
 ### 示例
 
@@ -65,7 +67,7 @@ child_p.on('disconnect', () => {
 
 error事件回调函数包含1个参数
 
-- error, 异常错误对象
+- error: Error, 异常错误对象
 
 ### 示例
 
@@ -82,14 +84,14 @@ child_p.on('error', (error) => {
 
 ### 事件触发条件
 
-子进程结束(正常结束/异常结束)时触发
+子进程结束时触发, 不论正常结束还是异常结束亦或者是中断结束, 均触发
 
 ### 回调函数
 
 exit事件回调函数包含以下2个参数:
 
-- code, 进程退出状态码, 如果子进程正常退出, code即为进程的最终退出状态码, 否则该参数值为null
-- signal, 进程中断信号, 如果子进程由于接收到中断信号退出, signal即为收到的中断信号
+- code: Number|null, 进程退出状态码, 如果子进程正常退出, code即为进程的最终退出状态码, 否则该参数值为null
+- signal: Node.Signa|null, 进程中断信号, 如果子进程由于接收到中断信号退出, signal即为收到的中断信号
 
 code和signal参数是互斥的, 总是有一个为非空的
 
@@ -116,10 +118,10 @@ child_p.on('exit', (code, signal) => {
 
 message事件回调函数包含以下2个参数:
 
-- message, 自动反序列化后的进程间通信消息
-- sendHandle, net.Socket 或 net.Server对象或undefined
+- message: Object|String|any, 自动反序列化后的进程间通信消息
+- sendHandle: Socket, net.Socket 或 net.Server对象或undefined
 
-!> 注意: 进程间通信消息会经过自动的序列化和反序列化转换, 所以在回调函数中接收到的反序列化后的内容可能与消息发送方发送的原始内容存在不同, 尤其是设置了可选参数 { serialization: 'advanced' } 时, 该高级序列化因为格式不是JSON的超集, 存在可能的类型兼容问题, 会导致部分消息属性经过序列化处理后属性丢失或结构变化.
+!> 注意: 进程间通信消息会经过自动的序列化和反序列化转换, 所以在回调函数中接收到的反序列化后的内容*可能*与消息发送方发送的原始内容存在不同, 尤其是设置了可选参数 { serialization: 'advanced' } 时, 该高级序列化格式因为不是JSON的超集, 存在可能的类型兼容问题, 会导致部分消息属性经过序列化处理后属性丢失或结构变化.
 
 ### 示例
 
@@ -138,13 +140,13 @@ child_p.on('message', (message, handle) => {
 
 子进程派生成功时触发**一次**, 如果子进程派生失败, spawn事件是不会触发的, 取而代之, 一个[error](#error)事件会被触发
 
-spawn事件总是会在其他可触发事件前最先触发
+?> spawn事件总是会在其他可触发事件前最先触发
 
 !> 注意: spawn事件只会在派生子进程成功后触发一次, 如果设置了可选参数: { shell: true }, 那么子进程会先创建Shell, 再将需要执行的命令交给Shell去执行, 只要Shell的创建是成功的, 就意味着子进程派生成功, 此时spawn事件就会触发, 不论传递给Shell的命令是否开始执行, 执行成功与否, 因此并不能简单的以spawn事件是否触发来判断子进程是否成功的完成派生.
 
 ### 回调函数
 
-spawn事件回调函数没有参数.
+spawn事件回调函数没有参数
 
 ### 示例
 
@@ -169,7 +171,7 @@ child_p.on('spawn', () => {
 
 stdio.data 事件回调函数包含1个参数:
 
-- chunk, 流释放的数据片段
+- chunk: Buffer|String, 流释放的数据片段
 
 ### 示例
 
@@ -246,7 +248,7 @@ child_p.stdout.on('end', () => {
 
 stdio.error事件回调包含1个参数:
 
-- error, 异常错误对象
+- error: Error, 异常错误对象
 
 ### 示例
 
