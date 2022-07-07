@@ -1,4 +1,4 @@
-# -show_frame
+# -show_frames
 
 ---
 
@@ -9,11 +9,11 @@
 ## 用法
 
 ```bash
--show_frame
+-show_frames
 ```
 
 ## 示例
 
 ```bash
-ffprobe -show_frame
+ffprobe -show_frames
 ```
