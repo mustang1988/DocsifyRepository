@@ -344,6 +344,7 @@
       - [视频文件生成预览图序列](/repository/Tools/FFmpeg/docs/Commands/视频文件生成预览图序列.md#视频文件生成预览图序列)
       - [获取视频指定帧的画面图片](/repository/Tools/FFmpeg/docs/Commands/获取视频指定帧的画面图片.md#获取视频指定帧的画面图片)
       - [FFmpeg创建纯色视频文件](/repository/Tools/FFmpeg/docs/FFmpeg创建纯色视频文件.md#ffmpeg创建纯色视频文件)
+      - [FFmpeg屏幕录制](/repository/Tools/FFmpeg/docs/FFmpeg屏幕录制.md#ffmpeg屏幕录制)
     - [FFprobe命令常用参数](/repository/Tools/FFmpeg/docs/FFprobe命令常用参数.md#FFprobe命令常用参数)
       - [-i](/repository/Tools/FFmpeg/docs/FFprobe/-i.md#i)
       - [-v](/repository/Tools/FFmpeg/docs/FFprobe/-v.md#v)
@@ -380,6 +381,7 @@
     - [在VSCode中单步调试TypeScript和JavaScript](/repository/Tools/VSCode/docs/在VSCode中单步调试TypeScript和JavaScript.md#在vscode中单步调试typescript)
     - [VSCode插件](/repository/Tools/VSCode/docs/Plugins/README.md#vscode-插件)
       - [Project Manager](/repository/Tools/VSCode/docs/Plugins/ProjectManager.md#projectmanager)
+      - [CodeSnap](/repository/Tools/VSCode/docs/Plugins/CodeSnap.md#codesnap)
     
   ---
 
