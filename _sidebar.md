@@ -279,6 +279,7 @@
       - [-of](/repository/Tools/FFmpeg/docs/FFprobe/-of.md#of)
     - [FFprobe常用处理命令](/repository/Tools/FFmpeg/docs/FFprobe常用处理命令.md#ffprobe常用处理命令)
       - [获取媒体文件元信息](/repository/Tools/FFmpeg/docs/Commands/获取媒体文件元信息.md#获取媒体文件元信息)
+      - [FFprobe媒体文件元信息解读](/repository/Tools/FFmpeg/docs/FFprobe媒体文件元信息解读.md)
   - [Git](/repository/Tools/Git/README.md#git)
     - [Git工作流](/repository/Tools/Git/docs/Gitflow.md#GitWorkflow)
     - [约定式提交](/repository/Tools/Git/docs/ConventionalCommits.md#约定式提交)
