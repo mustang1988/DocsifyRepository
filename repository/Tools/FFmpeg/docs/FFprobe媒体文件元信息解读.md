@@ -265,7 +265,7 @@ coded_width, coded_height为视频的编码宽度和编码高度, 单位: 像素
 
 关于I,P,B帧, 可参考, 10:22 左右开始:
 
-<iframe width="640" height="480" src="//player.bilibili.com/player.html?aid=37424012&bvid=BV1nt411Q7S6&cid=65779111&page=1" scrolling="no" allowfullscreen="true"></iframe>
+<iframe width="720" height="540" src="//player.bilibili.com/player.html?aid=37424012&bvid=BV1nt411Q7S6&cid=65779111&page=1" scrolling="no" allowfullscreen="true"></iframe>
 
 #### sample_aspect_ratio, display_aspect_ratio
 
@@ -307,8 +307,186 @@ r_frame_rate表示视频的真实帧率, avg_frame_rate为平均帧率
 
 ### 音频流信息解读
 
+根据codec_type值, 取出元信息中的音频流部分:
+
+```json
+{
+    "index": 1,
+    "codec_name": "aac",
+    "codec_long_name": "AAC (Advanced Audio Coding)",
+    "profile": "LC",
+    "codec_type": "audio",
+    "codec_tag_string": "mp4a",
+    "codec_tag": "0x6134706d",
+    "sample_fmt": "fltp",
+    "sample_rate": "48000",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "bits_per_sample": 0,
+    "id": "0x2",
+    "r_frame_rate": "0/0",
+    "avg_frame_rate": "0/0",
+    "time_base": "1/48000",
+    "start_pts": 0,
+    "start_time": "0.000000",
+    "duration_ts": 4132864,
+    "duration": "86.101333",
+    "bit_rate": "192000",
+    "nb_frames": "4037",
+    "extradata_size": 2,
+    "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0
+    },
+    "tags": {
+        "creation_time": "2016-10-24T06:29:51.000000Z",
+        "language": "eng",
+        "handler_name": "Sound Media Handler",
+        "vendor_id": "[0][0][0][0]"
+    }
+}
+```
+
+#### codec_name, codec_long_name
+
+音频编码器名的简称和全称
+
+#### sample_fmt
+
+音频采样格式
+
+#### sample_rate
+
+音频采样率, 单位: Hz
+
+#### channels
+
+音频通道数量, 单声道为1, 立体声(双声道)为2, 与 [音频声道布局](#channel_layout) 有关
+
+#### channel_layout
+
+音频声道布局
+
+![](../images/audio_channel_layout.png)
+
+常见音频声道布局有以下几种:
+
+- mono:           FC
+- stereo:         FL+FR
+- 2.1:            FL+FR+LFE
+- 3.0:            FL+FR+FC
+- 3.0(back):      FL+FR+BC
+- 4.0:            FL+FR+FC+BC
+- quad:           FL+FR+BL+BR
+- quad(side):     FL+FR+SL+SR
+- 3.1:            FL+FR+FC+LFE
+- 5.0:            FL+FR+FC+BL+BR
+- 5.0(side):      FL+FR+FC+SL+SR
+- 4.1:            FL+FR+FC+LFE+BC
+- 5.1:            FL+FR+FC+LFE+BL+BR
+- 5.1(side):      FL+FR+FC+LFE+SL+SR
+- 6.0:            FL+FR+FC+BC+SL+SR
+- 6.0(front):     FL+FR+FLC+FRC+SL+SR
+- hexagonal:      FL+FR+FC+BL+BR+BC
+- 6.1:            FL+FR+FC+LFE+BC+SL+SR
+- 6.1(back):      FL+FR+FC+LFE+BL+BR+BC
+- 6.1(front):     FL+FR+LFE+FLC+FRC+SL+SR
+- 7.0:            FL+FR+FC+BL+BR+SL+SR
+- 7.0(front):     FL+FR+FC+FLC+FRC+SL+SR
+- 7.1:            FL+FR+FC+LFE+BL+BR+SL+SR
+- 7.1(wide):      FL+FR+FC+LFE+BL+BR+FLC+FRC
+- 7.1(wide-side): FL+FR+FC+LFE+FLC+FRC+SL+SR
+- octagonal:      FL+FR+FC+BL+BR+BC+SL+SR
+- hexadecagonal:  FL+FR+FC+BL+BR+BC+SL+SR+TFL+TFC+TFR+TBL+TBC+TBR+WL+WR
+- downmix:        DL+DR
+- 22.2:           FL+FR+FC+LFE+BL+BR+FLC+FRC+BC+SL+SR+TC+TFL+TFC+TFR+TBL+TBC+TBR+LFE2+TSL+TSR+BFC+BFL+BFR
+
+#### bits_per_sample
+
+每个采样点数据比特数量
+
+#### bit_rate
+
+音频码率, 单位: bps
+
 ### 数据流信息解读
+
+**TODO**
 
 ### 字幕流信息解读
 
+**TODO**
+
 ## 格式信息解读
+
+取出元信息中的format部分
+
+```json
+{
+    "filename": "Swordsmith.mp4",
+    "nb_streams": 2,
+    "nb_programs": 0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "format_long_name": "QuickTime / MOV",
+    "start_time": "0.000000",
+    "duration": "86.101333",
+    "size": "770255991",
+    "bit_rate": "71567392",
+    "probe_score": 100,
+    "tags": {
+        "major_brand": "isom",
+        "minor_version": "1",
+        "compatible_brands": "isom",
+        "creation_time": "2016-10-24T05:33:14.000000Z"
+    }
+}
+```
+
+#### filename
+
+文件路径
+
+#### nb_streams
+
+文件中包含的流数量
+
+#### format_name, format_long_name
+
+封装格式名称的简称和全称
+
+#### start_time
+
+文件开始时间, 单位: 秒
+
+#### duration
+
+文件封装格式时长, 单位: 秒
+
+#### size
+
+文件大小, 单位: Byte
+
+#### probe_score
+
+FFprobe给出的文件信息价值评分
+
+一个输入(在本例中是一个文件)可以有一个扩展名(比如".avi")并且具有不同的格式(例如wav文件), FFmpeg可以检测输入的真实格式(使用ffprobe), 为了做到这一点，它打开文件并读取它(前5秒，如果我没记错的话，由选项analyzeduration设置), 然后，它给每一种格式分配一个分数:如果数据与输入无关，得分较低;如果格式看起来正确，得分较高, 
+
+返回的格式是得分最高的格式, Probe_score是这个分数.
+
+100是最大分数，这意味着FFmpeg确定格式是真实的, 如果评分低于25，则建议增加探测持续时间.
