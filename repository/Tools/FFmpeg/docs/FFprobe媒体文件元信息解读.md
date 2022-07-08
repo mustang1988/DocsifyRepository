@@ -2,6 +2,43 @@
 
 ---
 
+- [FFprobe媒体文件元信息解读](#ffprobe媒体文件元信息解读)
+  - [获取媒体元信息](#获取媒体元信息)
+  - [流信息解读](#流信息解读)
+    - [index](#index)
+    - [codec_type](#codec_type)
+    - [视频流信息解读](#视频流信息解读)
+      - [codec_name, codec_long_name](#codec_name-codec_long_name)
+      - [width, coded_width, height, coded_height](#width-coded_width-height-coded_height)
+      - [has_b_frames](#has_b_frames)
+      - [sample_aspect_ratio, display_aspect_ratio](#sample_aspect_ratio-display_aspect_ratio)
+      - [pix_fmt](#pix_fmt)
+      - [color_range, color_space, color_transfer 和 color_primaries](#color_range-color_space-color_transfer-和-color_primaries)
+      - [r_frame_rate, avg_frame_rate](#r_frame_rate-avg_frame_rate)
+      - [duration](#duration)
+      - [bit_rate](#bit_rate)
+      - [nb_frames](#nb_frames)
+    - [音频流信息解读](#音频流信息解读)
+      - [codec_name, codec_long_name](#codec_name-codec_long_name-1)
+      - [sample_fmt](#sample_fmt)
+      - [sample_rate](#sample_rate)
+      - [channels](#channels)
+      - [channel_layout](#channel_layout)
+      - [bits_per_sample](#bits_per_sample)
+      - [bit_rate](#bit_rate-1)
+    - [数据流信息解读](#数据流信息解读)
+    - [字幕流信息解读](#字幕流信息解读)
+  - [格式信息解读](#格式信息解读)
+      - [filename](#filename)
+      - [nb_streams](#nb_streams)
+      - [format_name, format_long_name](#format_name-format_long_name)
+      - [start_time](#start_time)
+      - [duration](#duration-1)
+      - [size](#size)
+      - [probe_score](#probe_score)
+
+## 获取媒体元信息
+
 获取测试用媒体文件: [下载地址](https://4kmedia.org/sony-swordsmith-hdr-uhd-4k-demo/), 下载后重命名媒体文件为: Swordsmith.mp4
 
 使用ffprobe通过以下参数读取媒体文件元信息
