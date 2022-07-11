@@ -298,7 +298,7 @@ coded_width, coded_height为视频的编码宽度和编码高度, 单位: 像素
 
 解码器中帧重排序缓冲区的大小
 
-可以将此属性理解为视频中的双向预测帧(B帧)向前和向后引用了多少帧的数据, 当此属性值为0时, 意味着视频流中并没有B帧, 只有I帧和P帧.
+可以将此属性理解为视频中的双向预测帧(B帧)向前和向后引用了多少帧的数据, 当此属性值为0时, 意味着视频流中并没有B帧, 只有I帧+P帧, 或只有I帧.
 
 关于I,P,B帧, 可参考, 10:22 左右开始:
 
@@ -306,13 +306,38 @@ coded_width, coded_height为视频的编码宽度和编码高度, 单位: 像素
 
 #### sample_aspect_ratio, display_aspect_ratio
 
-此属性值为字符串格式的比值, 比例分隔符为: ":"
+此属性值为字符串格式的比值, 比值分隔符为":"
 
-前者为视频流的采样宽高比, 后者为播放时的显示宽高比
+sample_aspect_ratio为视频流的采样宽高比, display_aspect_ratio为播放时的显示宽高比, 常见值有:
+
+- 4:3, 多用于传统模拟信号的电视节目
+- 16:9, 多用于数字影视内容
 
 #### pix_fmt
 
-**TODO**
+画面的像素格式, 常见值有:
+
+- YUV420P
+
+  大多数数字影视内容均会采用该像素格式, 其支持在HTML5标准的video标签中进行播放(是否支持播放还需要参考编码类型), 每像素存储占用12bit, 最大支持8bit色深
+
+- YUV422P
+
+  与YUV420P类似, 区别在于U,V色彩分量的压缩比例不同, 每像素存储占用16bit, 最大支持8bit色深
+
+- YUV420P10LE
+
+  YUV420P的扩展版本, 每像素存储占用15bit, 最大支持10bit色深, 多用于HDR视频
+
+- YUV420P16LE
+
+  YUV420P的扩展版本, 每像素存储占用24bit, 最大支持16bit色深, 多用于HDR视频
+
+更多像素格式可参考: [FFmpeg的视频像素格式列表](https://ffmpeg.org/ffmpeg-all.html#Supported-Pixel-Formats) 或 使用命令行工具查看
+
+```bash
+ffmpeg -pix_fmts
+```
 
 #### color_range, color_space, color_transfer 和 color_primaries
 
@@ -322,13 +347,14 @@ coded_width, coded_height为视频的编码宽度和编码高度, 单位: 像素
 
 #### r_frame_rate, avg_frame_rate
 
-视频流的帧率, 字符串格式的比值, 比例分隔符为: "/"
+视频流的帧率, 字符串格式的比值, 比值分隔符为"/"
 
 "xxx/yyy", 表示 yyy 秒内有 xxx 幅画面(帧)
 
 r_frame_rate表示视频的真实帧率, avg_frame_rate为平均帧率
 
-!> 注意: 美制NTSC制式因为某些历史原因([has_b_frames](#has_b_frames)章节视频中有解释)</br>存在一些非整数帧率值, 其中常见的有: 23.976, 29.97, 47.952 和 59.94</br>其对应的帧率, 用比值表示分别为: '24000/1001', '30000/1001', '48000/1001' 和 '60000/1001'</br>在使用FFmpeg进行视频转码时, 注意这些帧率的 [ -r 参数](/repository/Tools/FFmpeg/docs/VideoStream/Common/-r.md#r) 参数不要用小数, 要用比值, 否则转码结果是不正确的.
+!> 注意: 美制NTSC制式因为某些历史原因([has_b_frames](#has_b_frames)章节视频中有解释)</br>存在一些非整数帧率值, 其中常见的有: 23.976, 29.97, 47.952 和 59.94</br>其对应的帧率, 用比值表示分别为: '24000/1001', '30000/1001', '48000/1001' 和 '60000/1001'</br>在使用FFmpeg进行视频转码时, 注意这些帧率的 [ -r 参数](/repository/Tools/FFmpeg/docs/VideoStream/Common/-r.md#r) 参数不要用小数, 要用比值, 否则转码结果是不正确的: [NTSC制式帧率转换](/repository/Tools/FFmpeg/docs/NTSC制式帧率转换.md#ntsc制式帧率转换)
+
 
 #### duration
 
